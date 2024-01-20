@@ -56,10 +56,6 @@ const Main = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="p-6 rounded-lg">
             <div className="flex justify-center items-center" />
-            {/* <img
-            src="./assets/pictures/undraw_Working_remotely_re_6b3a.png"
-            class="max-w-full h-auto"
-          /> */}
             <svg
               className="h-40 w-40 text-gray-500"
               fill="none"
@@ -89,10 +85,6 @@ const Main = () => {
             </a>
           </div>
           <div className="p-6 rounded-lg">
-            {/* <img
-            src="./assets/pictures/undraw_Questions_re_1fy7.png"
-            class="max-w-full h-auto"
-          /> */}
             <svg
               className="h-40 w-40 text-gray-500"
               viewBox="0 0 24 24"
@@ -123,10 +115,6 @@ const Main = () => {
             </a>
           </div>
           <div className="p-6 rounded-lg">
-            {/* <img
-            src="./assets/pictures/undraw_Real_time_sync_re_nky7.png"
-            class="max-w-full h-auto"
-          /> */}
             <svg
               className="h-40 w-40 text-gray-500"
               viewBox="0 0 24 24"
