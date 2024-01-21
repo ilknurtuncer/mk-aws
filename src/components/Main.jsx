@@ -1,4 +1,6 @@
-
+import Push from "../assets/pictures/undraw_Push_notifications_re_t84m.png";
+import Delivery from "../assets/pictures/undraw_delivery_truck_vt6p.png";
+import Contact from "../assets/pictures/undraw_Contact_us_re_4qqt.png";
 
 const Main = () => {
   return (
@@ -17,10 +19,7 @@ const Main = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="p-6 rounded-lg">
             <div className="flex justify-center items-center" />
-            <img
-              src="./assets/pictures/undraw_Push_notifications_re_t84m.png"
-              className="max-w-full h-auto"
-            />
+            <img src={Push} className="max-w-full h-auto" />
             <h3 className="text-2xl font-bold text-blue-700 mb-4">DEPLOY</h3>
             <p>
               Build your brand new SaaS platform on AWS. We'll help you design
@@ -35,16 +34,10 @@ const Main = () => {
               No problem! We'll help you design and execute your move, with
               access to migration funding from AWS.
             </p>
-            <img
-              src="./assets/pictures/undraw_delivery_truck_vt6p.png"
-              className="max-w-full h-auto"
-            />
+            <img src={Delivery} className="max-w-full h-auto" />
           </div>
           <div className="p-6 rounded-lg">
-            <img
-              src="./assets/pictures/undraw_Contact_us_re_4qqt.png"
-              className="max-w-full h-auto"
-            />
+            <img src={Contact} className="max-w-full h-auto" />
             <h3 className="text-2xl font-bold text-blue-700 mb-4">UPGRADE</h3>
             <p>
               We'll help you get the most from your existing AWS platform,
@@ -63,10 +56,6 @@ const Main = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="p-6 rounded-lg">
             <div className="flex justify-center items-center" />
-            {/* <img
-            src="./assets/pictures/undraw_Working_remotely_re_6b3a.png"
-            class="max-w-full h-auto"
-          /> */}
             <svg
               className="h-40 w-40 text-gray-500"
               fill="none"
@@ -96,10 +85,6 @@ const Main = () => {
             </a>
           </div>
           <div className="p-6 rounded-lg">
-            {/* <img
-            src="./assets/pictures/undraw_Questions_re_1fy7.png"
-            class="max-w-full h-auto"
-          /> */}
             <svg
               className="h-40 w-40 text-gray-500"
               viewBox="0 0 24 24"
@@ -130,10 +115,6 @@ const Main = () => {
             </a>
           </div>
           <div className="p-6 rounded-lg">
-            {/* <img
-            src="./assets/pictures/undraw_Real_time_sync_re_nky7.png"
-            class="max-w-full h-auto"
-          /> */}
             <svg
               className="h-40 w-40 text-gray-500"
               viewBox="0 0 24 24"
@@ -167,6 +148,6 @@ const Main = () => {
       </main>
     </div>
   );
-}
+};
 
-export default Main
+export default Main;
