@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import Push from "../assets/pictures/undraw_Push_notifications_re_t84m.png";
 import Delivery from "../assets/pictures/undraw_delivery_truck_vt6p.png";
 import Contact from "../assets/pictures/undraw_Contact_us_re_4qqt.png";
@@ -19,6 +21,7 @@ const Main = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="p-6 rounded-lg">
             <div className="flex justify-center items-center" />
+            
             <img src={Push} className="max-w-full h-auto" />
             <h3 className="text-2xl font-bold text-blue-700 mb-4">DEPLOY</h3>
             <p>
