@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import {
   Navbar,
@@ -32,7 +33,7 @@ import { Link } from 'react-router-dom';
 
 const navListMenuItems = [
   {
-    title: "Products",
+    title: "Securıty",
     description: "Find the perfect solution for your needs.",
     icon: SquaresPlusIcon,
   },
@@ -42,17 +43,17 @@ const navListMenuItems = [
     icon: UserGroupIcon,
   },
   {
-    title: "Blog",
+    title: "Backup-Dısaster",
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
   },
   {
-    title: "Services",
+    title: "Cost Revıew",
     description: "Learn how we can help you achieve your goals.",
     icon: SunIcon,
   },
   {
-    title: "Support",
+    title: "Storage Solutıons",
     description: "Reach out to us for assistance or inquiries",
     icon: GlobeAmericasIcon,
   },
@@ -60,20 +61,20 @@ const navListMenuItems = [
     title: "Contact",
     description: "Find the perfect solution for your needs.",
     icon: PhoneIcon,
-    link: "/contact", // link özelliğini tanımla
+    link: "/contact", 
   },
   {
-    title: "News",
+    title: "Cloud Mıgratıon",
     description: "Read insightful articles, tips, and expert opinions.",
     icon: NewspaperIcon,
   },
   {
-    title: "Products",
+    title: "Performance Optımısatıon",
     description: "Find the perfect solution for your needs.",
     icon: RectangleGroupIcon,
   },
   {
-    title: "Special Offers",
+    title: "Aws Well-Archıtected Revıew",
     description: "Explore limited-time deals and bundles",
     icon: TagIcon,
   },
@@ -130,7 +131,7 @@ function NavListMenu() {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              Resources
+             Services
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -160,6 +161,7 @@ function NavListMenu() {
 }
 
 function NavList() {
+  const  [link, setIsNavList] = React.useState(false);
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
@@ -179,9 +181,9 @@ function NavList() {
         color="red"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Link to="/" className="flex items-center gap-2 py-2 pr-4">
           Contact Us
-        </ListItem>
+        </Link>
       </Typography>
     </List>
   );
