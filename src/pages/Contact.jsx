@@ -1,16 +1,17 @@
+/* eslint-disable react/jsx-no-undef */
 import { useState } from "react";
-
+import { Label, Textarea } from 'flowbite-react';
 const Contact = ({ onSubmit }) => {
   const [formValues, setFormValues] = useState({
     username: "",
     email: "",
-    password: "",
+    comment: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { username, password, email } = formValues;
-    alert(`Username: ${username}\nEmail: ${email}\nPassword: ${password}`);
+    const { username, comment, email } = formValues;
+    alert(`Username: ${username}\nEmail: ${email}\nPassword: ${comment}`);
     
     // Form submit işleminden sonra sayfayı yönlendir
     onSubmit(); // AppRouter component'inden gelen onSubmit prop'u çağrılır
@@ -57,16 +58,14 @@ const Contact = ({ onSubmit }) => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="password" className="block text-sm font-medium text-gray-600">
-            Password
-          </label>
-          <input
-            name="password"
-            type="password"
+        <Label htmlFor="comment" value="Your message" />
+          <Textarea
+            name="comment"
+            type="comment"
             className="mt-1 p-2 w-full border rounded-md"
-            id="password"
-            placeholder="Enter your password"
-            value={formValues.password}
+            id="comment"
+            placeholder="Leave a comment..."
+            value={formValues.comment}
             onChange={handleFormValues}
           />
         </div>
