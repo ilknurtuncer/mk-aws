@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import { NavbarWithMegaMenu } from "../components/NavbarWithMegaMenu"
 import Home from "../pages/Home"
 import About from "../pages/About"
+
 import Contact from "../pages/Contact"
 import Services from "../pages/Services"
 import Insight from "../pages/Services"
