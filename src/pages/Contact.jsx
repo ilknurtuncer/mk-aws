@@ -1,16 +1,20 @@
+/* eslint-disable react/jsx-no-undef */
 import { useState } from "react";
+import { Label, Textarea } from 'flowbite-react';
+
 
 const Contact = ({ onSubmit }) => {
   const [formValues, setFormValues] = useState({
     username: "",
     email: "",
-    password: "",
+    comment: "",
+    countries: "United States",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { username, password, email } = formValues;
-    alert(`Username: ${username}\nEmail: ${email}\nPassword: ${password}`);
+    const { username, comment, email, countries  } = formValues;
+    alert(`Username: ${username}\nEmail: ${email}\nPassword: ${comment}\nCountry: ${countries}`);
     
     // Form submit işleminden sonra sayfayı yönlendir
     onSubmit(); // AppRouter component'inden gelen onSubmit prop'u çağrılır
@@ -57,19 +61,37 @@ const Contact = ({ onSubmit }) => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="password" className="block text-sm font-medium text-gray-600">
-            Password
-          </label>
-          <input
-            name="password"
-            type="password"
+        <Label htmlFor="comment" value="Your message" />
+          <Textarea
+            name="comment"
+            type="comment"
             className="mt-1 p-2 w-full border rounded-md"
-            id="password"
-            placeholder="Enter your password"
-            value={formValues.password}
+            id="comment"
+            placeholder="Leave a comment..."
+            value={formValues.comment}
             onChange={handleFormValues}
           />
         </div>
+
+ 
+        <div className="mb-4">
+            <Label htmlFor="countries" value="Select your country" />
+            <select
+              name="countries"
+              id="countries"
+              className="mt-1 p-2 w-full border rounded-md"
+              required
+              value={formValues.countries}
+              onChange={handleFormValues}
+            >
+              <option>United States</option>
+              <option>Canada</option>
+              <option>France</option>
+              <option>Germany</option>
+            </select>
+          </div>
+
+
         <div className="text-center">
           <button className="bg-red-500 text-white p-2 rounded-md">Submit</button>
         </div>
