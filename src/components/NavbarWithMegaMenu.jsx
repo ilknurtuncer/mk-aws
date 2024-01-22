@@ -28,7 +28,7 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
- 
+
 const navListMenuItems = [
   {
     title: "Products",
@@ -76,7 +76,7 @@ const navListMenuItems = [
     icon: TagIcon,
   },
 ];
- 
+
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -109,9 +109,9 @@ function NavListMenu() {
           </div>
         </MenuItem>
       </a>
-    ),
+    )
   );
- 
+
   return (
     <React.Fragment>
       <Menu
@@ -156,7 +156,7 @@ function NavListMenu() {
     </React.Fragment>
   );
 }
- 
+
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
@@ -184,17 +184,17 @@ function NavList() {
     </List>
   );
 }
- 
+
 export function NavbarWithMegaMenu() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false),
+      () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
- 
+
   return (
     <Navbar className="bg-gray-800 mx-auto px-4 py-4 max-w-full">
       <div className="flex items-center justify-between text-red-200">
