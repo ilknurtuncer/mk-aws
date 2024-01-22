@@ -1,9 +1,10 @@
+
 import { Carousel } from 'flowbite-react';
 
 function Component() {
   return (
     <div className=" relative h-96  ">
-      <Carousel className='text-white' leftControl="left" rightControl="right">
+       <Carousel pauseOnHover>
         <img src="https://static.fnac-static.com/multimedia/Images/FD/Comete/164179/CCP_IMG_ORIGINAL/2178029.jpg" alt="..." />
         <img src="https://www.govconwire.com/wp-content/uploads/2023/09/unnamed-file-62.png" alt="..." />
         <img src="https://www.dertreasurer.de/fileadmin/user_upload/Cloud_Finanzabteilung_FINANCE_Ar__TH_stock.adobe.com_507662376.jpg" alt="..." />

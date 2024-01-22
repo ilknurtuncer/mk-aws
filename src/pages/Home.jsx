@@ -2,7 +2,7 @@
 
 const Home = () => {
   return (
-    <div className="bg-[#b315a8] h-10">
+    <div className="bg-[#d71c44f8] h-6">
       <h1 className="text-3xl font-bold flex text-align-center justify-center "></h1>
     </div>
   );
