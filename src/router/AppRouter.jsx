@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom"
 import { NavbarWithMegaMenu } from "../components/NavbarWithMegaMenu"
 import Home from "../pages/Home"
@@ -17,6 +18,14 @@ import CarouselComponent from "../components/CarouselComponent"
 
 
 const AppRouter = () => {
+  // eslint-disable-next-line no-undef
+  const navigate = useNavigate(); // useNavigate eklenen kütüphaneden alındı
+
+  const handleSubmit = () => {
+    // Form submit işleminden sonra sayfayı yönlendir
+    navigate("/contact-success"); // "/contact-success" sayfasına yönlendir
+  };
+
   return (
     <>
       <NavbarWithMegaMenu />
@@ -25,13 +34,12 @@ const AppRouter = () => {
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
         <Route path="/inssight" element={<Insight />} />
         <Route path="/workwithus" element={<WorkWithUs />} />
       </Routes>
       <Main />
-      
       <FooterWithSitemap/>
     </>
   );
