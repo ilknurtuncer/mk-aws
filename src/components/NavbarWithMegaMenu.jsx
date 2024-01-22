@@ -60,7 +60,7 @@ const navListMenuItems = [
     title: "Contact",
     description: "Find the perfect solution for your needs.",
     icon: PhoneIcon,
-    link: "/contact", // link özelliğini tanımla
+    link: "/contact", 
   },
   {
     title: "News",
@@ -130,7 +130,7 @@ function NavListMenu() {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              Resources
+             Services
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
