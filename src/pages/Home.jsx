@@ -1,14 +1,15 @@
 /* eslint-disable jsx-a11y/heading-has-content */
-
-import { NavbarWithMegaMenu } from "../components/NavbarWithMegaMenu";
-
+import CarouselComponent from "../components/CarouselComponent"
+import Main from "../components/Main"
 
 const Home = () => {
   return (
-    <div className="bg-[#d71c44f8] h-6">
-      <NavbarWithMegaMenu/>
-      <h1 className="text-3xl font-bold flex text-align-center justify-center "></h1>
-    </div>
+
+<>
+<CarouselComponent/>
+<Main />
+
+</>
   );
 };
 

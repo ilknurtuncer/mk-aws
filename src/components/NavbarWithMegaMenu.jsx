@@ -29,7 +29,9 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import LogoImage from "../assets/img/AWS-2.png";
+
 
 const navListMenuItems = [
   {
@@ -86,13 +88,13 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description }, key) => (
       // eslint-disable-next-line no-undef
-      <Link to={Link} className="font-medium" key={key}>
+      <Link to={Link} className="font-medium " key={key}>
         <MenuItem className=" flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
+              className: "h-6 text-white w-6",
             })}
           </div>
           <div>
@@ -125,9 +127,9 @@ function NavListMenu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium ">
+          <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-slate-200 bg-gray-800"
+              className="flex items-center gap-2 py-2 pr-6 font-medium text-slate-200 bg-gray-800"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -147,7 +149,7 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block ">
+        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block bg-opacity-85 ">
           <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
             {renderItems}
           </ul>
@@ -161,29 +163,21 @@ function NavListMenu() {
 }
 
 function NavList() {
-  const  [link, setIsNavList] = React.useState(false);
+  const navigate = useNavigate();
+
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        color="red"
-        className="font-medium"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
+      <Typography as={Link} to="/" variant="small" color="red" className="font-medium">
+        <ListItem className="flex items-center gap-2 py-2 pr-6">Home</ListItem>
       </Typography>
       <NavListMenu />
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        color="red"
-        className="font-medium"
-      >
-        <Link to="/" className="flex items-center gap-2 py-2 pr-4">
+      <Typography as="div" variant="small" color="red" className="font-medium">
+        <ListItem
+          className="flex items-center gap-2 py-2 pr-6"
+          onClick={() => navigate("/contact")}
+        >
           Contact Us
-        </Link>
+        </ListItem>
       </Typography>
     </List>
   );
@@ -200,27 +194,35 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="bg-gray-800 mx-auto px-4 py-4 max-w-full">
-      <div className="flex items-center justify-between text-red-200">
+    <Navbar className="bg-gray-800 mx-auto max-w-full">
+      <div className="flex items-center justify-around text-red-200">
+      <img
+          src={LogoImage}
+          alt="MK-AWS Logo"
+          className="mr-4 cursor-pointer lg:ml-2"
+          style={{ maxWidth: "100px" }} // İsteğe bağlı olarak genişliği ayarlayabilirsiniz
+        />
         <Typography
           as="a"
           href="#"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          
         >
           Material Tailwind
         </Typography>
+        
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <div className="hidden gap-3 lg:flex">
+        {/* <div className="hidden gap-3 lg:flex">
           <Button variant="text" size="sm" color="blue-gray">
             Log In
           </Button>
           <Button variant="gradient" size="sm">
             Sign In
           </Button>
-        </div>
+        </div> */}
         <IconButton
           variant="text"
           color="blue-gray"
