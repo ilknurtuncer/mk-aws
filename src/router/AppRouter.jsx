@@ -8,6 +8,7 @@ import { FooterWithSitemap } from "../components/FooterWithSitemap"
 
 
 
+
 const AppRouter = () => {
   // eslint-disable-next-line no-undef
   const navigate = useNavigate(); // useNavigate eklenen kütüphaneden alındı
@@ -20,11 +21,24 @@ const AppRouter = () => {
   return (
     <>
       <NavbarWithMegaMenu />
+
+     
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+      
+        <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
+        <Route path="/services" element={<Services />} />
+       
+      </Routes>
+      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
       </Routes>
+
       <FooterWithSitemap/>
     </>
   );
