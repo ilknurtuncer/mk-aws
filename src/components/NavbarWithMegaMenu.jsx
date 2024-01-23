@@ -88,13 +88,13 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description }, key) => (
       // eslint-disable-next-line no-undef
-      <Link to={Link} className="font-medium" key={key}>
+      <Link to={Link} className="font-medium " key={key}>
         <MenuItem className=" flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
+              className: "h-6 text-white w-6",
             })}
           </div>
           <div>
@@ -127,7 +127,7 @@ function NavListMenu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium ">
+          <Typography as="div" variant="small" className="font-medium">
             <ListItem
               className="flex items-center gap-2 py-2 pr-6 font-medium text-slate-200 bg-gray-800"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -149,7 +149,7 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block ">
+        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block bg-opacity-85 ">
           <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
             {renderItems}
           </ul>
@@ -194,13 +194,13 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="bg-gray-800 mx-auto px-4 py-4 max-w-full">
+    <Navbar className="bg-gray-800 mx-auto max-w-full">
       <div className="flex items-center justify-around text-red-200">
       <img
           src={LogoImage}
           alt="MK-AWS Logo"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
-          style={{ maxWidth: "150px" }} // İsteğe bağlı olarak genişliği ayarlayabilirsiniz
+          className="mr-4 cursor-pointer lg:ml-2"
+          style={{ maxWidth: "100px" }} // İsteğe bağlı olarak genişliği ayarlayabilirsiniz
         />
         <Typography
           as="a"
