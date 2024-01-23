@@ -9,20 +9,7 @@ const Home = () => {
 <>
 <CarouselComponent/>
 <Main />
-
 </>
-
-
-import CarouselComponent from "../components/CarouselComponent";
-import Main from '../components/Main'
-
-const Home = () => {
-  return (
-    <>
-      <CarouselComponent />
-      <Main />
-    </>
-
   );
 };
 
