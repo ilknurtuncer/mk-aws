@@ -1,5 +1,7 @@
-/* eslint-disable no-unused-vars */
+
 import React from "react";
+import LogoImage from "../assets/img/AWS-2.png";
+
 import {
   Navbar,
   Collapse,
@@ -202,11 +204,18 @@ export function NavbarWithMegaMenu() {
   return (
     <Navbar className="bg-gray-800 mx-auto px-4 py-4 max-w-full">
       <div className="flex items-center justify-between text-red-200">
+        {/* =======Logo======= */}
+        <img
+          src={LogoImage}
+          alt="MK-AWS Logo"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-4"
+          style={{ maxWidth: "150px" }} // İsteğe bağlı olarak genişliği ayarlayabilirsiniz
+        />
         <Typography
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          className="mr-8 cursor-pointer py-1.5 "
         >
           Material Tailwind
         </Typography>

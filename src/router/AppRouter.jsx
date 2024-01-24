@@ -5,6 +5,7 @@ import Home from "../pages/Home"
 import Contact from "../pages/Contact"
 import Services from "../pages/Services"
 import { FooterWithSitemap } from "../components/FooterWithSitemap"
+import AwsWellAr from '../services/AwsWellAr';
 
 
 
@@ -24,8 +25,9 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/AwsWellAr" element={<AwsWellAr />} />
       </Routes>
-      <FooterWithSitemap/>
+      <FooterWithSitemap />
     </>
   );
 }

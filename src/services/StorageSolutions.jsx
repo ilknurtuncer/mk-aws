@@ -1,11 +1,6 @@
-import React from 'react'
 
 const StorageSolutions = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div>StorageSolutions</div>;
 }
 
 export default StorageSolutions
