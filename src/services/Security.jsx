@@ -1,11 +1,9 @@
 import React from 'react'
 
 const Security = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div>Security</div>;
 }
 
 export default Security
+
+
