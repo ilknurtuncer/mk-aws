@@ -1,7 +1,7 @@
 
 
 const BachupDisaster = () => {
-  return <div>BachupDisaster</div>;
+  return  <div>BachupDisaster</div>;
 }
 
 export default BachupDisaster

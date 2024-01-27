@@ -6,6 +6,8 @@ import Contact from "../pages/Contact"
 import Services from "../pages/Services"
 import { FooterWithSitemap } from "../components/FooterWithSitemap"
 import AwsWellAr from '../services/AwsWellAr';
+import BuildAws from '../services/BuildAws';
+import WordWithUs from '../pages/WordWithUs';
 
 
 
@@ -26,6 +28,8 @@ const AppRouter = () => {
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
         <Route path="/AwsWellAr" element={<AwsWellAr />} />
+        <Route path="/BuildAws" element={<BuildAws />} />
+        <Route path="/WordWithUs" element={<WordWithUs />} />
       </Routes>
       <FooterWithSitemap />
     </>
