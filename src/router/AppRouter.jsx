@@ -8,6 +8,8 @@ import { FooterWithSitemap } from "../components/FooterWithSitemap"
 import AwsWellAr from '../services/AwsWellAr';
 import BuildAws from '../services/BuildAws';
 import WordWithUs from '../pages/WordWithUs';
+import Security from '../services/Security';
+import CloudMig from '../services/CloudMig';
 
 
 
@@ -30,6 +32,8 @@ const AppRouter = () => {
         <Route path="/AwsWellAr" element={<AwsWellAr />} />
         <Route path="/BuildAws" element={<BuildAws />} />
         <Route path="/WordWithUs" element={<WordWithUs />} />
+        <Route path="/Security" element={<Security />} />
+        <Route path="CloudMig"  element={<CloudMig/>}/>
       </Routes>
       <FooterWithSitemap />
     </>

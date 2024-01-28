@@ -4,6 +4,7 @@ import Push from "../assets/pictures/undraw_Push_notifications_re_t84m.png";
 import Cost from "../assets/pictures/undraw_Transfer_money_re_6o1h.png";
 import Contact from "../assets/pictures/undraw_Contact_us_re_4qqt.png";
 import Solution from "../assets/pictures/undraw_Real_time_sync_re_nky7.png";
+
 const Main = () => {
   return (
     <div>

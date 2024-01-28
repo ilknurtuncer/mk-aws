@@ -110,7 +110,7 @@ const AwsWellAr = () => {
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-4 bg-gray-500 hover:bg-yellow-300 hover:text-blue-600 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
@@ -142,7 +142,7 @@ const AwsWellAr = () => {
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-4 bg-gray-500 hover:bg-yellow-300 hover:text-blue-600 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
@@ -173,7 +173,7 @@ const AwsWellAr = () => {
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500  hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-4 bg-gray-500  hover:bg-yellow-300 hover:text-blue-600 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
@@ -204,7 +204,7 @@ const AwsWellAr = () => {
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500  hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-4 bg-gray-500  hover:bg-yellow-300 hover:text-blue-600 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
