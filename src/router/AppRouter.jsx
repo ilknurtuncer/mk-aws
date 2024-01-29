@@ -1,13 +1,11 @@
-import React from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
-import { NavbarWithMegaMenu } from "../components/NavbarWithMegaMenu"
-import Home from "../pages/Home"
-import Contact from "../pages/Contact"
-import Services from "../pages/Services"
-import { FooterWithSitemap } from "../components/FooterWithSitemap"
-
-
-
+import React from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { NavbarWithMegaMenu } from "../components/NavbarWithMegaMenu";
+import Home from "../pages/Home";
+import Contact from "../pages/Contact";
+import Services from "../pages/Services";
+import { FooterWithSitemap } from "../components/FooterWithSitemap";
+import FullStack from "../pages/services/FullStack";
 
 const AppRouter = () => {
   // eslint-disable-next-line no-undef
@@ -26,11 +24,15 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
+        <Route
+          path="/fullstack"
+          element={<FullStack onSubmit={handleSubmit} />}
+        />
       </Routes>
 
-      <FooterWithSitemap/>
+      <FooterWithSitemap />
     </>
   );
-}
+};
 
-export default AppRouter
+export default AppRouter;

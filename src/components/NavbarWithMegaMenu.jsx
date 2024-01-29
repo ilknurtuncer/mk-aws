@@ -206,10 +206,10 @@ export function NavbarWithMegaMenu() {
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-2 font-serif text-2xl text-yellow-400"
           
         >
-          Material Tailwind
+          Cloudifiers TM
         </Typography>
         
         <div className="hidden lg:block">

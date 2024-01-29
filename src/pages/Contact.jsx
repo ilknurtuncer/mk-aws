@@ -84,7 +84,7 @@ const Contact = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:3001/api/submitForm', {
+      const response = await fetch('https://sendmail-q7zv.onrender.com/sendmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -101,6 +101,12 @@ const Contact = () => {
     } catch (error) {
       console.error('Error:', error.message);
     }
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      message: '',
+    });
   };
 
   const handleChange = (e) => {
