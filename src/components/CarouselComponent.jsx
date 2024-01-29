@@ -7,11 +7,11 @@ function Component() {
       {/* Carousel Slide 1 */}
       <div className="flex h-full w-full items-center justify-center object-cover relative">
         <div className="absolute flex flex-col items-center justify-center bottom-0 right-40 left-40 p-20">
-          <h1 className="text-left text-red-600 text-opacity-80 text-7xl font-extrabold mb-8">
+          <h1 className="text-left text-red-700 text-opacity-90 text-7xl font-extrabold  mb-8">
             Empowering Your Cloud Journey
           </h1>
-          <p className=" text-gray-50 font-bold text-3xl hidden sm:block">
-            Discover unparalleled expertise in AWS Infrastructure and Cloud Migration. Let us guide you through a seamless and secure digital transformation.
+          <p className=" text-cyan-600 font-bold text-3xl hidden sm:block">
+            Discover unparalleled expertise in AWS Infrastructure and Cloud Migration. <br /> Let us guide you through a seamless and secure digital transformation.
           </p>
           <a
             href="tel:123456789"
