@@ -5,7 +5,7 @@ import Cloud from "../assets/pictures/rise.jpg";
 
 const CloudMig = () => {
   return (
-    <div>
+    <>
       <main className="container  mx-auto px-2 py-2 bg-white">
         <div className="text-center px- py-2  mb-2 mt-4">
           {/* img and title */}
@@ -175,7 +175,7 @@ const CloudMig = () => {
         </section>
       </main>
       <br />
-    </div>
+    </>
   );
 };
 

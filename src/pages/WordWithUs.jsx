@@ -1,9 +1,10 @@
-import React from 'react'
+
 
 const WordWithUs = () => {
     return (
       <>
         <hr className=" border-orange-500 border-[10px] dark:border-gray-700 "></hr>
+
         <main className="container max-w-5xl text-teal-500 mx-auto px- py-2 bg-white">
           <div className=" p-8  ">
             <h1 className="text-3xl font-bold mb-6">WORK WITH US</h1>
@@ -16,7 +17,7 @@ const WordWithUs = () => {
               Embrace a Network of Expertise
             </h2>
 
-            <p className=" mb-6">
+            <p className=" mb-6 font-semibold">
               Cloudifiers, an essential service under MK Consultancy (UK) Ltd,
               invites independent cloud professionals to join our expansive
               network of consultants. We are a hub of innovation, drawing on the
