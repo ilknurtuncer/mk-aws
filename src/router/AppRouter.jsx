@@ -12,6 +12,9 @@ import Security from '../services/Security';
 import CloudMig from '../services/CloudMig';
 import BachupDisaster from '../services/BachupDisaster';
 import ConstReview from '../services/ConstReview';
+import Performance from '../services/Performance';
+import WebsiteDesing from '../services/WebsiteDesing';
+import StorageSolutions from '../services/StorageSolutions';
 
 
 
@@ -38,7 +41,11 @@ const AppRouter = () => {
         <Route path="/CloudMig" element={<CloudMig />} />
         <Route path="/BachupDisaster" element={<BachupDisaster />} />
         <Route path="/ConstReview" element={<ConstReview />} />
+        <Route path="/Performance" element={<Performance />} />
+        <Route path="/WebsiteDesing" element={<WebsiteDesing />} />
+        <Route path="/Storage" element={<StorageSolutions />} />
       </Routes>
+
       <FooterWithSitemap />
     </>
   );

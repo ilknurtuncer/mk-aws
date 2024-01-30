@@ -8,13 +8,13 @@ const ConstReview = () => {
         {/* img and title */}
         <div className="flex justify-center items-center">
           <div className="">
-            <img src={analysıs} className="max-h-80 " />
+            <img src={analysıs} className="mr-8 max-h-80 " />
           </div>
           <div>
-            <h2 className="text-3xl font-bold font-sans text-teal-500 m-4 mt-8">
+            <h2 className="text-3xl text-left font-bold font-sans text-teal-500 ml-8 m-4 mt-8">
               COST OPTIMIZATION
             </h2>
-            <p className="text-gray-500 text-xl font-sans font-bold ">
+            <p className="ml-8 text-gray-400 text-2xl font-serif font-bold ">
               Minimize Your Expenses, Maximize Your Growth.
             </p>
           </div>
