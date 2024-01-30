@@ -38,47 +38,55 @@ const navListMenuItems = [
     title: "Securıty",
     description: "Find the perfect solution for your needs.",
     icon: SquaresPlusIcon,
+    link:"/Securıty",
   },
   {
-    title: "About Us",
+    title: "Build Aws",
     description: "Meet and learn about our dedication",
     icon: UserGroupIcon,
+    link:"/BuildAws",
   },
   {
     title: "Backup-Dısaster",
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
+    link:"/BachupDisaster",
   },
   {
     title: "Cost Revıew",
     description: "Learn how we can help you achieve your goals.",
     icon: SunIcon,
+    link:"ConstReview",
   },
   {
     title: "Storage Solutıons",
     description: "Reach out to us for assistance or inquiries",
     icon: GlobeAmericasIcon,
+    link:"/StorageSolutions",
   },
   {
-    title: "Contact",
+    title: "fullstack",
     description: "Find the perfect solution for your needs.",
     icon: PhoneIcon,
-    link: "/contact", 
+    link: "/fullstack", 
   },
   {
     title: "Cloud Mıgratıon",
     description: "Read insightful articles, tips, and expert opinions.",
     icon: NewspaperIcon,
+    link:"/CloudMig",
   },
   {
     title: "Performance Optımısatıon",
     description: "Find the perfect solution for your needs.",
     icon: RectangleGroupIcon,
+    link:"/Performance",
   },
   {
     title: "Aws Well-Archıtected Revıew",
     description: "Explore limited-time deals and bundles",
     icon: TagIcon,
+    link:"/AwsWellAr",
   },
 ];
 
@@ -86,9 +94,9 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = navListMenuItems.map(
-    ({ icon, title, description }, key) => (
+    ({ icon, title, description ,link}, key) => (
       // eslint-disable-next-line no-undef
-      <Link to={Link} className="font-medium " key={key}>
+      <Link to={link} className="font-medium " key={key}>
         <MenuItem className=" flex items-center gap-3 ">
           <div className="flex items-center justify-center  !bg-blue-gray-50 p-2">
             {" "}

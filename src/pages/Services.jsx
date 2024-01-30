@@ -1,4 +1,5 @@
-import FullStack from "./services/FullStack"
+import AwsWellAr from "../services/AwsWellAr"
+import FullStack from "../services/FullStack"
 
 
 const Services = () => {
@@ -6,6 +7,7 @@ const Services = () => {
     <div>
       Services
       <FullStack/>
+      <AwsWellAr/>
     </div>
   )
 }
