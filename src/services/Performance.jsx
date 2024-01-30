@@ -1,4 +1,6 @@
 
+/* eslint-disable jsx-a11y/alt-text */
+
 import Optimization from "../assets/pictures/optimization.jpg";
 
 const Performance = () => {
@@ -6,6 +8,8 @@ const Performance = () => {
     <>
       {/* main1 */}
       <main className="text-center bg-[#30b7acee]  py-2 ">
+
+      <main className="text-center bg-[#36b6abee] py-2 ">
         {/* img and title */}
         <div className="flex justify-center items-center">
           <div className="">

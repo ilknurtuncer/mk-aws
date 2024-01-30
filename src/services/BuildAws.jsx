@@ -1,7 +1,14 @@
+
 import Push from "../assets/pictures/undraw_Push_notifications_re_t84m.png";
 import Delivery from "../assets/pictures/undraw_delivery_truck_vt6p.png";
 import Contact from "../assets/pictures/undraw_Contact_us_re_4qqt.png";
 import Connection from "../assets/pictures/undraw_Connection_re_lcud.png";
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import Push from "../assets/pictures/undraw_Push_notifications_re_t84m.png";
+import Delivery from "../assets/pictures/undraw_delivery_truck_vt6p.png";
+import Contact from "../assets/pictures/undraw_Contact_us_re_4qqt.png";
+// import Connection from "../assets/pictures/undraw_Connection_re_lcud.png";
 const BuildAws = () => {
   return (
     <>

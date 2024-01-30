@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { NavbarWithMegaMenu } from "../components/NavbarWithMegaMenu"
@@ -15,8 +16,23 @@ import ConstReview from '../services/ConstReview';
 import Performance from '../services/Performance';
 import WebsiteDesing from '../services/WebsiteDesing';
 import StorageSolutions from '../services/StorageSolutions';
-
-
+import React from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { NavbarWithMegaMenu } from "../components/NavbarWithMegaMenu";
+import Home from "../pages/Home";
+import Contact from "../pages/Contact";
+import Services from "../pages/Services";
+import { FooterWithSitemap } from "../components/FooterWithSitemap";
+import AwsWellAr from "../services/AwsWellAr";
+import FullStack from "../services/FullStack";
+import BuildAws from "../services/BuildAws";
+import CloudMig from "../services/CloudMig";
+import BachupDisaster from "../services/BachupDisaster";
+import ConstReview from "../services/ConstReview";
+import Performance from "../services/Performance";
+import WebsiteDesing from "../services/WebsiteDesing";
+import StorageSolutions from "../services/StorageSolutions";
+import Security from "../services/Security";
 
 const AppRouter = () => {
   // eslint-disable-next-line no-undef
@@ -30,6 +46,7 @@ const AppRouter = () => {
   return (
     <>
       <NavbarWithMegaMenu />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
@@ -37,6 +54,9 @@ const AppRouter = () => {
         <Route path="/AwsWellAr" element={<AwsWellAr />} />
         <Route path="/BuildAws" element={<BuildAws />} />
         <Route path="/WordWithUs" element={<WordWithUs />} />
+        <Route path="/fullstack" element={<FullStack />} />
+        <Route path="/awsWellAr" element={<AwsWellAr />} />
+        <Route path="/BuildAws" element={<BuildAws />} />
         <Route path="/Security" element={<Security />} />
         <Route path="/CloudMig" element={<CloudMig />} />
         <Route path="/BachupDisaster" element={<BachupDisaster />} />
@@ -44,11 +64,12 @@ const AppRouter = () => {
         <Route path="/Performance" element={<Performance />} />
         <Route path="/WebsiteDesing" element={<WebsiteDesing />} />
         <Route path="/Storage" element={<StorageSolutions />} />
+        <Route path="/StorageSolutions" element={<StorageSolutions />} />
       </Routes>
 
       <FooterWithSitemap />
     </>
   );
-}
+};
 
-export default AppRouter
+export default AppRouter;

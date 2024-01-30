@@ -1,3 +1,4 @@
+
 // import AwsWellAr from "../services/AwsWellAr";
 // import BachupDisaster from "../services/BachupDisaster";
 // import BuildAws from "../services/BuildAws";
@@ -7,6 +8,8 @@
 // import Performance from "../services/Performance";
 // import Security from "../services/Security";
 // import StorageSolutions from "../services/StorageSolutions";
+import AwsWellAr from "../services/AwsWellAr"
+import FullStack from "../services/FullStack"
 
 const Services = () => {
   return (
@@ -20,6 +23,9 @@ const Services = () => {
       <Performance />
       <Security />
       <StorageSolutions />  */}
+      Services
+      <FullStack/>
+      <AwsWellAr/>
     </div>
   );
 };
