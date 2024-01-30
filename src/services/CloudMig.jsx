@@ -1,6 +1,4 @@
-
 /* eslint-disable jsx-a11y/alt-text */
-
 
 import Time from "../assets/pictures/time.jpg";
 import Cloud from "../assets/pictures/rise.jpg";
@@ -20,7 +18,7 @@ const CloudMig = () => {
               <h2 className="text-3xl font-bold font-sans text-teal-500 m-4 mt-8">
                 CLOUD MIGRATION
               </h2>
-              <p className="text-gray-500 text-xl font-sans font-bold ">
+              <p className="text-gray-500 text-xl font-bold ">
                 Migrate with confidence and grow your business.
               </p>
             </div>

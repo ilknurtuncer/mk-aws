@@ -1,4 +1,3 @@
-
 /* eslint-disable jsx-a11y/alt-text */
 import ağ1 from '../assets/pictures/ağ1.jpg'
 import ağ2 from "../assets/pictures/ağ2.jpg";
