@@ -1,27 +1,28 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
-import Optimization from "../assets/pictures/optimization.jpg";
+
 
 const StorageSolutions = () => {
   return (
     <>
       {/* main1 */}
-      <main className="text-center bg-[#36b6abee] py-2 ">
+      <main className="text-center bg-[#5eb9faee] py-2 ">
         {/* img and title */}
         <div className="flex justify-center items-center">
           <div className="">
-            <img src={Optimization} className="opacity-[0.8] max-h-80 " />
+            {/* <img src={Optimization} className="opacity-[0.8] max-h-80 " /> */}
           </div>
           <div className="">
-            <h2 className="text-3xl text-left font-bold font-sans text-zinc-700  m-4  ">
-              PERFORMANCE OPTIMISATION
+            <h2 className="text-3xl font-bold font-sans text-zinc-700  m-4  ">
+              STORAGE SOLUTIONS
             </h2>
-            <p className=" mr-2 text-teal-800 text-2xl font-serif font-bold ">
-              Elevate your operational efficiency
+            <p className=" text-zinc-700 text-2xl font-serif font-bold ">
+              Secure and Scale Your Data with AWS.
             </p>
           </div>
         </div>
 
-        <hr className="border-teal-700 border-[1.5px] dark:border-gray-700 "></hr>
+        <hr className="border-zinc-200 border-[1.5px] dark:border-gray-700 "></hr>
         {/* <div className="bg-orange-500 h-1"></div> */}
       </main>
       {/* main2 */}
@@ -33,73 +34,71 @@ const StorageSolutions = () => {
               <div className="flex justify-center items-center" />
 
               {/* <img src={Push} className="max-w-full h-auto" /> */}
-              <h3 className="text-2xl font-bold  text-teal-500 mb-4">
-                ENSURE PEAK PERFORMANCE
+              <h3 className="text-2xl font-bold  text-blue-500 mb-4">
+                CLOUD STORAGE FOR EVERY BUSINESS.
               </h3>
               <p>
-                In today's fast-paced digital world, optimizing your
-                infrastructure is not just an improvement, it's a necessity.
-                With AWS and The Scale Factory, gain access to the leading-edge
-                skills, tools, and expertise required to fine-tune your
-                platform. We ensure it's not only meeting today's demands but is
-                also ready to adapt to tomorrow's growth.
+                Whether you're fully in the cloud or just starting your digital
+                transition, AWS storage solutions like S3 buckets offer a
+                flexible and secure platform for your data. Our services
+                facilitate your move to the cloud at your pace, ensuring data
+                availability and robust backup, even if your current operations
+                are not cloud-based.
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
-                PERFORMANCE OBJECTIVES
+              <h3 className="text-2xl font-bold text-blue-500 mb-4">
+                DATA STORAGE STRATEGIZING
               </h3>
               <p>
-                Target high efficiency, achieve higher satisfaction. We help you
-                set and reach ambitious performance objectives that matter to
-                your business—whether it’s reducing latency, increasing uptime,
-                or maximizing throughput. Ensure your infrastructure
-                consistently meets and exceeds the expectations of your clients.
+                Leverage our expertise to strategically utilize AWS S3,
+                optimizing data storage for operational efficiency and
+                cost-effectiveness. We’ll help you navigate the options to find
+                the perfect fit for your data needs, whether it's frequently
+                accessed information or long-term archiving.
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
-                TECHNICAL ARCHITECTURE
+              <h3 className="text-2xl font-bold text-blue-500 mb-4">
+                STORAGE COST ASSESSMENT
               </h3>
               <p>
-                Build on a foundation designed for growth. The right
-                architecture is key to scalable performance. We guide you in
-                selecting the optimal resources and services for your workload,
-                ensuring that your system is both resilient and agile, ready to
-                grow with your business.
+                Keep your storage costs in check with our tailored assessments.
+                We evaluate your usage and help you select the most
+                cost-efficient AWS S3 pricing tiers, ensuring you only pay for
+                the storage you need.
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
-                PERFORMANCE ANALYSIS
+              <h3 className="text-2xl font-bold text-blue-500 mb-4">
+                SCALABILITY WITHOUT COMPLEXITY
               </h3>
               <p>
-                Insight-driven enhancements. Continuously monitor and analyze
-                your infrastructure to ensure it operates at peak performance.
-                We help you identify potential bottlenecks and fine-tune your
-                resources, ensuring efficiency and a seamless user experience.
+                Our storage solutions grow with your business. We offer scalable
+                AWS storage that adapts to your changing needs, providing the
+                flexibility to expand without complexity or excess expense
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
-                STRATEGIC GROWTH PLANNING
+              <h3 className="text-2xl font-bold text-blue-500 mb-4">
+                OPTIMIZED DATA ACCESSIBILITY
               </h3>
               <p>
-                Plan for success, prepare for scale. As your business grows, so
-                do your system's demands. We provide strategic planning and load
-                testing services to guarantee that your platform is ready to
-                handle increasing volumes without compromising on performance.
+                Maximize access to your data with our optimization strategies.
+                We guide you through efficient data retrieval methods from AWS
+                S3, balancing cost with speed and accessibility, so your data is
+                there when you need it.
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
-                CONTINUOUS REVIEW
+              <h3 className="text-2xl font-bold text-blue-500 mb-4">
+                UNMATCHED DATA PROTECTION
               </h3>
               <p>
-                Adapt and thrive in a changing landscape. AWS’s evolving
-                ecosystem requires a dynamic optimization strategy. We engage in
-                ongoing reviews and adjustments to ensure your platform remains
-                at the forefront of operational excellence.
+                Safeguard your data with the highest standards of security. We
+                implement AWS's comprehensive security measures, protecting your
+                data from threats and ensuring it meets regulatory compliance,
+                no matter where you are in your cloud journey.
               </p>
             </div>
           </section>
@@ -107,21 +106,18 @@ const StorageSolutions = () => {
       </main>
 
       {/* main3 */}
-      <main className="bg-[#36b6abee]">
-        <div className="bg-[#36b6abee] h-2"></div>
-        <hr className="border-teal-700 border-[1.5px] dark:border-gray-700 "></hr>
+      <main className="bg-[#5eb9faee]">
+        <div className="bg-[#5eb9faee] h-2"></div>
+        <hr className="border-zinc-200 border-[1.5px] dark:border-gray-700 "></hr>
         <main className="container  text-gray-700 font-semibold mx-auto px-4 py-2 mb-2 ">
           <div className=" text-center mb-8">
             <h2 className="text-3xl font-bold text-zinc-700  mb-2 mt-6">
               FEATURED SERVICES
             </h2>
-            <p className="font-semibold font-serif text-2xl text-teal-800 ">
-              Your Pathway to Enhanced Efficiency and Scalability
-            </p>
+
             <p className="font-semibold font-serif text-xl text-zinc-700 mt-2 ">
-              Discover how The Scale Factory can help you optimize the <br />
-              performance of your infrastructure and future-proof your platform
-              for years to come.
+              Elevate Your Data Management with Specialized AWS Storage
+              Services.
             </p>
           </div>
           <section className="grid text-zinc-800 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -142,16 +138,18 @@ const StorageSolutions = () => {
               </svg>
               <br />
               <h3 className="text-2xl font-bold text-zinc-700  mb-4">
-                EFFICIENCY EVALUATION
+                RELIABLE DATA STORAGE
               </h3>
               <p>
-                Discover how to enhance your operations with our Efficiency
-                Evaluation, where we assess how to save on costs while improving
-                the overall performance of your infrastructure.
+                Whether you're operating on-premises, hybrid, or fully in the
+                cloud, our Reliable Data Storage service ensures your data is
+                securely housed in AWS's robust ecosystem. Transition at your
+                comfort level, with the assurance that your data is accessible
+                and protected.
               </p>
               <a
                 href="#"
-                className="inline-block mt-4 bg-zinc-600 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                className="inline-block mt-4 bg-zinc-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"
               >
                 Learn More
               </a>
@@ -173,16 +171,18 @@ const StorageSolutions = () => {
               </svg>
               <br />
               <h3 className="text-2xl font-bold text-zinc-700  mb-4">
-                EXPENDITURE ANALYSIS
+                COST-EFFICIENT STORAGE PLANNING
               </h3>
               <p>
-                Dive deep into your spending patterns with our Expenditure
-                Analysis service. We'll pinpoint areas where you can cut back
-                without sacrificing quality or productivity.
+                Navigate through AWS's cost-effective storage options with our
+                Cost-Efficient Storage Planning. We provide personalized
+                consultations to help you select the most suitable AWS S3
+                storage class that aligns with your usage patterns and budgetary
+                considerations.
               </p>
               <a
                 href="#"
-                className="inline-block mt-4  bg-zinc-600 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                className="inline-block mt-4  bg-zinc-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"
               >
                 Learn More
               </a>
@@ -205,24 +205,26 @@ const StorageSolutions = () => {
               </svg>
               <br />
               <h3 className="text-2xl font-bold text-zinc-700  mb-4">
-                RESOURCE OPTIMIZATION SUPPORT
+                SCALABLE STORAGE SOLUTIONS
               </h3>
               <p>
-                Our Resource Optimization Support goes beyond mere advice. We
-                provide ongoing assistance to ensure your operations are lean
-                and your resources are utilized to their fullest potential.
+                Our Scalable Storage Solutions are designed to adapt to your
+                evolving business needs. We assist you in leveraging AWS's
+                scalability to handle fluctuating data loads, ensuring seamless
+                operations during peak periods and cost savings during quieter
+                times.
               </p>
               <a
                 href="#"
-                className="inline-block mt-4 bg-zinc-600  hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                className="inline-block mt-4 bg-zinc-600  hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"
               >
                 Learn More
               </a>
             </div>
           </section>
         </main>
-        <hr className="border-teal-800 border-[1.5px] dark:border-gray-700 "></hr>
-        <div className="bg-[#36b6abee]   h-2"></div>
+        <hr className="border-zinc-200 border-[1.5px] dark:border-gray-700 "></hr>
+        <div className="bg-[#5eb9faee]  h-2"></div>
       </main>
     </>
   );

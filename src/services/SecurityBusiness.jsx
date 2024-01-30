@@ -3,7 +3,7 @@
 import Cloud from "../assets/pictures/rise.jpg";
 import Grup1 from "../assets/pictures/grup1.jpg";
 
-const Security = () => {
+const SecurityBusiness = () => {
   return (
     <>
       <main className="container  mx-auto px-2 py-2 bg-white">
@@ -194,4 +194,4 @@ const Security = () => {
   );
 };
 
-export default Security;
+export default SecurityBusiness;

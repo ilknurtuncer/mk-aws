@@ -28,64 +28,63 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
 import LogoImage from "../assets/img/AWS-2.png";
-
 
 const navListMenuItems = [
   {
-    title: "Securıty",
+    title: "SecurityBusiness",
     description: "Find the perfect solution for your needs.",
     icon: SquaresPlusIcon,
-    link:"/Securıty",
+    link: "/SecurityBusiness",
   },
   {
     title: "Build Aws",
     description: "Meet and learn about our dedication",
     icon: UserGroupIcon,
-    link:"/BuildAws",
+    link: "/BuildAws",
   },
   {
     title: "Backup-Dısaster",
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
-    link:"/BachupDisaster",
+    link: "/BachupDisaster",
   },
   {
     title: "Cost Revıew",
     description: "Learn how we can help you achieve your goals.",
     icon: SunIcon,
-    link:"ConstReview",
+    link: "ConstReview",
   },
   {
     title: "Storage Solutıons",
     description: "Reach out to us for assistance or inquiries",
     icon: GlobeAmericasIcon,
-    link:"/StorageSolutions",
+    link: "/StorageSolutions",
   },
   {
     title: "fullstack",
     description: "Find the perfect solution for your needs.",
     icon: PhoneIcon,
-    link: "/fullstack", 
+    link: "/fullstack",
   },
   {
     title: "Cloud Mıgratıon",
     description: "Read insightful articles, tips, and expert opinions.",
     icon: NewspaperIcon,
-    link:"/CloudMig",
+    link: "/CloudMig",
   },
   {
     title: "Performance Optımısatıon",
     description: "Find the perfect solution for your needs.",
     icon: RectangleGroupIcon,
-    link:"/Performance",
+    link: "/Performance",
   },
   {
     title: "Aws Well-Archıtected Revıew",
     description: "Explore limited-time deals and bundles",
     icon: TagIcon,
-    link:"/AwsWellAr",
+    link: "/AwsWellAr",
   },
 ];
 
@@ -93,7 +92,7 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = navListMenuItems.map(
-    ({ icon, title, description ,link}, key) => (
+    ({ icon, title, description, link }, key) => (
       // eslint-disable-next-line no-undef
       <Link to={link} className="font-medium " key={key}>
         <MenuItem className=" flex items-center gap-3 ">
@@ -120,7 +119,7 @@ function NavListMenu() {
             </Typography>
           </div>
         </MenuItem>
-        </Link>
+      </Link>
     )
   );
 
@@ -140,7 +139,7 @@ function NavListMenu() {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-             Services
+              Services
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -174,7 +173,13 @@ function NavList() {
 
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Typography as={Link} to="/" variant="small" color="red" className="font-medium">
+      <Typography
+        as={Link}
+        to="/"
+        variant="small"
+        color="red"
+        className="font-medium"
+      >
         <ListItem className="flex items-center gap-2 py-2 pr-6">Home</ListItem>
       </Typography>
       <NavListMenu />
@@ -203,7 +208,7 @@ export function NavbarWithMegaMenu() {
   return (
     <Navbar className=" bg-black mx-auto max-w-full border-hidden rounded-none">
       <div className="flex items-center justify-around text-red-200">
-      <img
+        <img
           src={LogoImage}
           alt="MK-AWS Logo"
           className="mr-4 cursor-pointer lg:ml-2"
@@ -214,11 +219,10 @@ export function NavbarWithMegaMenu() {
           href="#"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2 font-serif text-2xl text-yellow-400"
-          
         >
           Cloudifiers TM
         </Typography>
-        
+
         <div className="hidden lg:block">
           <NavList />
         </div>

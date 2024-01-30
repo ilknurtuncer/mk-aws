@@ -16,7 +16,8 @@ import ConstReview from "../services/ConstReview";
 import Performance from "../services/Performance";
 import WebsiteDesing from "../services/WebsiteDesing";
 import StorageSolutions from "../services/StorageSolutions";
-import Security from "../services/Security";
+import SecurityBusiness from "../services/SecurityBusiness";
+
 
 const AppRouter = () => {
   // eslint-disable-next-line no-undef
@@ -38,7 +39,7 @@ const AppRouter = () => {
         <Route path="/fullstack" element={<FullStack />} />
         <Route path="/awsWellAr" element={<AwsWellAr />} />
         <Route path="/BuildAws" element={<BuildAws />} />
-        <Route path="/Security" element={<Security />} />
+        <Route path="/SecurityBusiness" element={<SecurityBusiness />} />
         <Route path="/CloudMig" element={<CloudMig />} />
         <Route path="/BachupDisaster" element={<BachupDisaster />} />
         <Route path="/ConstReview" element={<ConstReview />} />
