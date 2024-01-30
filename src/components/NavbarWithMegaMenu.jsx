@@ -1,5 +1,8 @@
-/* eslint-disable no-unused-vars */
+
 import React from "react";
+import LogoImage from "../assets/img/AWS-2.png";
+
+
 import {
   Navbar,
   Collapse,
@@ -201,7 +204,29 @@ export function NavbarWithMegaMenu() {
     );
   }, []);
 
-  return (
+
+    <>
+      <Navbar className=" bg-gray-800 mx-auto px-4 py-4 max-w-full">
+        <div className="flex items-center justify-between text-red-200">
+          {/* =======Logo======= */}
+          <img
+            src={LogoImage}
+            alt="MK-AWS Logo"
+            className="mr-4 cursor-pointer py-1.5 lg:ml-4"
+            style={{ maxWidth: "150px" }} // İsteğe bağlı olarak genişliği ayarlayabilirsiniz
+          />
+          <Typography
+            as="a"
+            href="#"
+            variant="h6"
+            className="mr-8 cursor-pointer py-1.5 "
+          >
+            MK-CLOUDIFIERS
+          </Typography>
+          <div className="hidden lg:block">
+            <NavList />
+          </div>
+          {/* <div className="hidden gap-3 lg:flex">
     <Navbar className="bg-gray-800 mx-auto max-w-full">
       <div className="flex items-center justify-around text-red-200">
       <img
@@ -231,6 +256,23 @@ export function NavbarWithMegaMenu() {
             Sign In
           </Button>
         </div> */}
+          <IconButton
+            variant="text"
+            color="blue-gray"
+            className="lg:hidden"
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            ) : (
+              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            )}
+          </IconButton>
+        </div>
+        <Collapse open={openNav}>
+          <NavList />
+          <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden ">
+            {/* <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
         <IconButton
           variant="text"
           color="blue-gray"
@@ -252,9 +294,11 @@ export function NavbarWithMegaMenu() {
           </Button>
           <Button variant="gradient" size="sm" fullWidth>
             Sign In
-          </Button>
-        </div>
-      </Collapse>
-    </Navbar>
+          </Button> */}
+          </div>
+        </Collapse>
+      </Navbar>
+      {/* <hr className=" border-orange-600 border-[10px] dark:border-gray-700 "></hr> */}
+    </>
   );
 }
