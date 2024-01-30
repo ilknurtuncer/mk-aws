@@ -43,7 +43,7 @@ const AppRouter = () => {
         <Route path="/ConstReview" element={<ConstReview />} />
         <Route path="/Performance" element={<Performance />} />
         <Route path="/WebsiteDesing" element={<WebsiteDesing />} />
-        <Route path="/Storage" element={<StorageSolutions />} />
+        <Route path="/StorageSolutions" element={<StorageSolutions />} />
       </Routes>
 
       <FooterWithSitemap />

@@ -41,28 +41,28 @@ const navListMenuItems = [
     link:"/Securıty",
   },
   {
-    title: "About Us",
+    title: "Build Aws",
     description: "Meet and learn about our dedication",
     icon: UserGroupIcon,
-    link:"",
+    link:"/BuildAws",
   },
   {
     title: "Backup-Dısaster",
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
-    link:"",
+    link:"/BachupDisaster",
   },
   {
     title: "Cost Revıew",
     description: "Learn how we can help you achieve your goals.",
     icon: SunIcon,
-    link:"",
+    link:"ConstReview",
   },
   {
     title: "Storage Solutıons",
     description: "Reach out to us for assistance or inquiries",
     icon: GlobeAmericasIcon,
-    link:"",
+    link:"/StorageSolutions",
   },
   {
     title: "fullstack",
@@ -74,19 +74,19 @@ const navListMenuItems = [
     title: "Cloud Mıgratıon",
     description: "Read insightful articles, tips, and expert opinions.",
     icon: NewspaperIcon,
-    link:"",
+    link:"/CloudMig",
   },
   {
     title: "Performance Optımısatıon",
     description: "Find the perfect solution for your needs.",
     icon: RectangleGroupIcon,
-    link:"",
+    link:"/Performance",
   },
   {
     title: "Aws Well-Archıtected Revıew",
     description: "Explore limited-time deals and bundles",
     icon: TagIcon,
-    link:"",
+    link:"/AwsWellAr",
   },
 ];
 
