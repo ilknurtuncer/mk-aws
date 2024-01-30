@@ -6,6 +6,12 @@ import Contact from "../pages/Contact"
 import Services from "../pages/Services"
 import { FooterWithSitemap } from "../components/FooterWithSitemap"
 import AwsWellAr from '../services/AwsWellAr';
+import BuildAws from '../services/BuildAws';
+import WordWithUs from '../pages/WordWithUs';
+import Security from '../services/Security';
+import CloudMig from '../services/CloudMig';
+import BachupDisaster from '../services/BachupDisaster';
+import ConstReview from '../services/ConstReview';
 
 
 
@@ -26,6 +32,12 @@ const AppRouter = () => {
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
         <Route path="/AwsWellAr" element={<AwsWellAr />} />
+        <Route path="/BuildAws" element={<BuildAws />} />
+        <Route path="/WordWithUs" element={<WordWithUs />} />
+        <Route path="/Security" element={<Security />} />
+        <Route path="/CloudMig" element={<CloudMig />} />
+        <Route path="/BachupDisaster" element={<BachupDisaster />} />
+        <Route path="/ConstReview" element={<ConstReview />} />
       </Routes>
       <FooterWithSitemap />
     </>

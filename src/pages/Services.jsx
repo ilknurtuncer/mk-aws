@@ -11,15 +11,15 @@
 const Services = () => {
   return (
     <div>
-      {/* <AwsWellAr /> */}
-      {/* <BachupDisaster />
+      {/* <AwsWellAr />
+      <BachupDisaster />
       <BuildAws />
       <CloudMig />
       <ConstReview />
       <FullStack />
       <Performance />
       <Security />
-      <StorageSolutions /> */}
+      <StorageSolutions />  */}
     </div>
   );
 };
