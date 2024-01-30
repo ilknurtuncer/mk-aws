@@ -1,4 +1,6 @@
+
 /* eslint-disable jsx-a11y/alt-text */
+
 
 import Time from "../assets/pictures/time.jpg";
 import Cloud from "../assets/pictures/rise.jpg";
