@@ -5,7 +5,17 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Services from "../pages/Services";
 import { FooterWithSitemap } from "../components/FooterWithSitemap";
-import FullStack from "../pages/services/FullStack";
+
+import AwsWellAr from "../services/AwsWellAr";
+import FullStack from "../services/FullStack";
+import BuildAws from "../services/BuildAws";
+import Security from "../services/Security";
+import CloudMig from "../services/CloudMig";
+import BachupDisaster from "../services/BachupDisaster";
+import ConstReview from "../services/ConstReview";
+import Performance from "../services/Performance";
+import WebsiteDesing from "../services/WebsiteDesing";
+import StorageSolutions from "../services/StorageSolutions";
 
 const AppRouter = () => {
   // eslint-disable-next-line no-undef
@@ -24,10 +34,16 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
-        <Route
-          path="/fullstack"
-          element={<FullStack onSubmit={handleSubmit} />}
-        />
+        <Route path="/fullstack"element={<FullStack/>} />
+        <Route path="/awsWellAr" element={<AwsWellAr />} />
+        <Route path="/BuildAws" element={<BuildAws />} />
+        <Route path="/Security" element={<Security />} />
+        <Route path="/CloudMig" element={<CloudMig />} />
+        <Route path="/BachupDisaster" element={<BachupDisaster />} />
+        <Route path="/ConstReview" element={<ConstReview />} />
+        <Route path="/Performance" element={<Performance />} />
+        <Route path="/WebsiteDesing" element={<WebsiteDesing />} />
+        <Route path="/Storage" element={<StorageSolutions />} />
       </Routes>
 
       <FooterWithSitemap />
