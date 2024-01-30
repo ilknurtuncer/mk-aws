@@ -14,6 +14,7 @@
     "@reduxjs/toolkit": "^2.0.1",
     "axios": "^1.6.5",
     "contentlayer": "^0.3.4",
+    "cors": "^2.8.5",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
     "formik": "^2.4.5",
@@ -23,7 +24,7 @@
     "react-indiana-drag-scroll": "^2.2.0",
     "react-persist": "^1.0.2",
     "react-redux": "^9.0.4",
-    "react-router-dom": "^6.0.0",
+    "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
     "react-select": "^5.8.0",
     "tailwind-merge": "^2.0.0"
@@ -63,5 +64,6 @@
     "@next/next/no-img-element": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "react/no-unescaped-entities": "off"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }

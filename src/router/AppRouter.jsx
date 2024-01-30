@@ -1,22 +1,38 @@
+
 import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { NavbarWithMegaMenu } from "../components/NavbarWithMegaMenu"
 import Home from "../pages/Home"
-import About from "../pages/About"
-
 import Contact from "../pages/Contact"
 import Services from "../pages/Services"
-import Insight from "../pages/Services"
-import WorkWithUs from "../pages/WorkWithUs";
-import Main from "../components/Main"
 import { FooterWithSitemap } from "../components/FooterWithSitemap"
-import CarouselComponent from "../components/CarouselComponent"
-
-
-
-
-
-
+import AwsWellAr from '../services/AwsWellAr';
+import BuildAws from '../services/BuildAws';
+import WordWithUs from '../pages/WordWithUs';
+import Security from '../services/Security';
+import CloudMig from '../services/CloudMig';
+import BachupDisaster from '../services/BachupDisaster';
+import ConstReview from '../services/ConstReview';
+import Performance from '../services/Performance';
+import WebsiteDesing from '../services/WebsiteDesing';
+import StorageSolutions from '../services/StorageSolutions';
+import React from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { NavbarWithMegaMenu } from "../components/NavbarWithMegaMenu";
+import Home from "../pages/Home";
+import Contact from "../pages/Contact";
+import Services from "../pages/Services";
+import { FooterWithSitemap } from "../components/FooterWithSitemap";
+import AwsWellAr from "../services/AwsWellAr";
+import FullStack from "../services/FullStack";
+import BuildAws from "../services/BuildAws";
+import CloudMig from "../services/CloudMig";
+import BachupDisaster from "../services/BachupDisaster";
+import ConstReview from "../services/ConstReview";
+import Performance from "../services/Performance";
+import WebsiteDesing from "../services/WebsiteDesing";
+import StorageSolutions from "../services/StorageSolutions";
+import Security from "../services/Security";
 
 const AppRouter = () => {
   // eslint-disable-next-line no-undef
@@ -30,20 +46,30 @@ const AppRouter = () => {
   return (
     <>
       <NavbarWithMegaMenu />
-      <Home/>
-      <CarouselComponent/>
+
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/inssight" element={<Insight />} />
-        <Route path="/workwithus" element={<WorkWithUs />} />
+        <Route path="/AwsWellAr" element={<AwsWellAr />} />
+        <Route path="/BuildAws" element={<BuildAws />} />
+        <Route path="/WordWithUs" element={<WordWithUs />} />
+        <Route path="/fullstack" element={<FullStack />} />
+        <Route path="/awsWellAr" element={<AwsWellAr />} />
+        <Route path="/BuildAws" element={<BuildAws />} />
+        <Route path="/Security" element={<Security />} />
+        <Route path="/CloudMig" element={<CloudMig />} />
+        <Route path="/BachupDisaster" element={<BachupDisaster />} />
+        <Route path="/ConstReview" element={<ConstReview />} />
+        <Route path="/Performance" element={<Performance />} />
+        <Route path="/WebsiteDesing" element={<WebsiteDesing />} />
+        <Route path="/Storage" element={<StorageSolutions />} />
+        <Route path="/StorageSolutions" element={<StorageSolutions />} />
       </Routes>
-      <Main />
-      <FooterWithSitemap/>
+
+      <FooterWithSitemap />
     </>
   );
-}
+};
 
-export default AppRouter
+export default AppRouter;
