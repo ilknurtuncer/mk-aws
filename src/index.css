@@ -7,3 +7,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.carousel-slide > div {
+  border-radius: 0; /* Resimleri saran div'in border radius'ını kaldır */
+}
