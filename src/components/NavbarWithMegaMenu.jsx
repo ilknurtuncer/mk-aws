@@ -34,55 +34,55 @@ import LogoImage from "../assets/img/AWS-2.png";
 const navListMenuItems = [
   {
     title: "SecurityBusiness",
-    description: "Find the perfect solution for your needs.",
+    description: "",
     icon: SquaresPlusIcon,
     link: "/SecurityBusiness",
   },
   {
     title: "Build Aws",
-    description: "Meet and learn about our dedication",
+    description: "",
     icon: UserGroupIcon,
     link: "/BuildAws",
   },
   {
     title: "Backup-Dısaster",
-    description: "Find the perfect solution for your needs.",
+    description: "",
     icon: Bars4Icon,
     link: "/BachupDisaster",
   },
   {
     title: "Cost Revıew",
-    description: "Learn how we can help you achieve your goals.",
+    description: "",
     icon: SunIcon,
     link: "ConstReview",
   },
   {
     title: "Storage Solutıons",
-    description: "Reach out to us for assistance or inquiries",
+    description: "",
     icon: GlobeAmericasIcon,
     link: "/StorageSolutions",
   },
   {
     title: "fullstack",
-    description: "Find the perfect solution for your needs.",
+    description: "",
     icon: PhoneIcon,
     link: "/fullstack",
   },
   {
     title: "Cloud Mıgratıon",
-    description: "Read insightful articles, tips, and expert opinions.",
+    description: "",
     icon: NewspaperIcon,
     link: "/CloudMig",
   },
   {
     title: "Performance Optımısatıon",
-    description: "Find the perfect solution for your needs.",
+    description: "",
     icon: RectangleGroupIcon,
     link: "/Performance",
   },
   {
     title: "Aws Well-Archıtected Revıew",
-    description: "Explore limited-time deals and bundles",
+    description: "",
     icon: TagIcon,
     link: "/AwsWellAr",
   },
@@ -135,7 +135,7 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-6 font-medium text-slate-200 bg-gray-800"
+              className="flex items-center gap-2 py-2 pr-6 font-medium text-slate-200 bg-gray-950"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -183,12 +183,30 @@ function NavList() {
         <ListItem className="flex items-center gap-2 py-2 pr-6">Home</ListItem>
       </Typography>
       <NavListMenu />
+      <Typography
+        as={Link}
+        to="/"
+        variant="small"
+        color="red"
+        className="font-medium"
+      >
+      <ListItem className="flex items-center gap-2 py-2 pr-6">About</ListItem>
+      </Typography>
+      <Typography
+        as={Link}
+        to="/"
+        variant="small"
+        color="red"
+        className="font-medium"
+      >
+      <ListItem className="flex items-center gap-2 py-2 pr-6">Word With</ListItem>
+      </Typography>
       <Typography as="div" variant="small" color="red" className="font-medium">
         <ListItem
           className="flex items-center gap-2 py-2 pr-6"
           onClick={() => navigate("/contact")}
         >
-          Contact Us
+          Contact
         </ListItem>
       </Typography>
     </List>
