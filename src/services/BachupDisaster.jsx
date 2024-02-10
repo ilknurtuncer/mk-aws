@@ -1,107 +1,124 @@
 
+import Optimization from "../assets/pictures/grup02.jpg";
 
 const BachupDisaster = () => {
   return (
     <>
-      <hr className=" border-teal-500 border-[10px] dark:border-gray-700 "></hr>
       {/* main1 */}
-      <main className="container max-w-6xl text-teal-500 mx-auto px- py-2 bg-white">
-        <div className=" p-8  ">
-          <h1 className="text-3xl font-bold mb-6">BACKUP-DISASTER</h1>
-
-          <p className="font-semibold mb-6">
-            Ensure continuity and resilience in the face of the unexpected.
-          </p>
-          <hr className="border-teal-200 border-[1.5px] dark:border-gray-700 "></hr>
-          <h2 className="text-2xl font-bold mb-4">
-            PLATFORM STABILITY IS CRUCIAL
-          </h2>
-
-          <p className=" mb-6 font-semibold">
-            Your operations hinge on the reliability of your systems. That's why
-            having a combined backup and disaster recovery strategy is
-            essential. It's not just about recovering from a disaster—it's about
-            having the capability to continue operations seamlessly,
-            safeguarding the future of your enterprise.
-          </p>
-          <hr className=" border-teal-200 border-[1.5px] dark:border-gray-700 "></hr>
-          <h2 className="text-2xl  font-bold mb-4">
-            MINIMIZE OPERATIONAL DOWNTIME
-          </h2>
-
-          <p className=" font-semibold mb-6">
-            Effective recovery, minimal disruption. A disaster doesn't just
-            impact your data—it can grind your entire business to a halt. Our
-            comprehensive backup and disaster recovery solutions minimize
-            downtime, so you can maintain business continuity even in the face
-            of disruption.
-          </p>
-          <hr className=" border-teal-200 border-[1.5px] dark:border-gray-700 "></hr>
-          <h2 className="text-2xl font-bold mb-4">ROBUST BACKUP STRATEGY</h2>
-          <p className=" font-semibold mb-6">
-            Secure your data, secure your peace of mind. Protect against data
-            loss with a backup strategy that encompasses regular and automated
-            backups, ensuring data integrity and swift recovery. Our approach
-            safeguards your data against both accidental and malicious threats.
-          </p>
-
-          <hr className=" border-teal-200 border-[1.5px] dark:border-gray-700 "></hr>
-          <h2 className="text-2xl font-bold mb-4">
-            MEET AND EXCEED CUSTOMER EXPECTATIONS
-          </h2>
-
-          <p className="font-semibold mb-6">
-            Deliver reliability, earn trust. Customers depend on your systems'
-            uptime. Demonstrate your commitment to reliability with a solid
-            backup-disaster protocol that not only meets but exceeds customer
-            expectations for data integrity and availability.
-          </p>
-
-          <hr className=" border-teal-200 border-[1.5px] dark:border-gray-700 "></hr>
-          <h2 className="text-2xl font-bold mb-4">
-            ENSURE REGULATORY COMPLIANCE
-          </h2>
-
-          <p className="font-semibold mb-6">
-            Maintain standards, avoid penalties. Complying with regulations is
-            not optional—it's a vital aspect of your business operations. Our
-            backup-disaster solutions are designed to keep you in line with
-            industry standards and regulatory requirements, protecting you from
-            costly penalties.
-          </p>
-
-          <hr className=" border-teal-200 border-[1.5px] dark:border-gray-700 "></hr>
-          <h2 className="text-2xl font-bold mb-4">READINESS AND RECOVERY</h2>
-
-          <p className="font-semibold mb-6">
-            Be prepared, respond effectively. A robust backup-disaster plan
-            ensures you're ready to restore services and data quickly and
-            efficiently, with minimal loss. We help you establish clear recovery
-            objectives and ensure that your team is prepared to execute them
-            without delay.
-          </p>
-        </div>
+      <main className=" mt-10 flex justify-center items-center text-center">
+        {/* img and title */}
+        <div className="container">
+          <div className=" rounded flex justify-center items-center">
+            
+          <div className="max-w-[400px]">
+            <img src={Optimization} className="opacity-[0.9]" />
+          </div>
+            
+            <div className=" text-left m-10">
+              <h2 className=" text-7xl font-bold font-sans text-teal-500 mb-4  ">
+                BACKUP-DISASTER
+              </h2>
+              <p className="text-6xl text-stone-700 font-serif font-bold ">
+                Ensure continuity and <br /> resilience in the face <br /> of the unexpected.
+              </p>
+          </div>          
+          </div>        
+          <hr className=" border-teal-400 border-[1.5px] dark:border-gray-700 "></hr>
+        </div>                 
       </main>
 
       {/* main2 */}
-      <main className="container max-w-6xl text-gray-500 font-semibold mx-auto px-4 py-2 mb-8 bg-teal-100 rounded-lg">
-        <div className=" text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-600 mb-2 mt-6">
+      <main className="bg-white mb-8 mt-10">
+        <main className="container font-bold bg-white text-gray-700 mx-auto px-2 py-2 ">
+          {/* section1 */}
+          <section className="text-2xl font-semibold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div className="p-6 rounded-lg">
+              <div className="flex justify-center items-center" />
+
+              {/* <img src={Push} className="max-w-full h-auto" /> */}
+              <h3 className="text-4xl font-bold  text-teal-500 mb-4">
+                PLATFORM STABILITY IS CRUCIAL
+              </h3>
+              <p>
+                Ensure seamless operational continuity with our comprehensive
+                backup and disaster recovery approach, safeguarding your
+                business's future.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                MINIMIZE OPERATIONAL DOWNTIME
+              </h3>
+              <p>
+                Rapid recovery, minimal impact. Our solutions safeguard
+                continuity, ensuring your business thrives through any
+                disruption.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                ROBUST BACKUP STRATEGY
+              </h3>
+              <p>
+                Secure your data, secure your peace of mind. Protect against
+                data loss with a backup Defend data integrity with our
+                comprehensive backup strategy, blending regularity and
+                automation for steadfast security.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                MEET AND EXCEED CUSTOMER EXPECTATIONS
+              </h3>
+              <p>
+                Uphold trust with our resilient backup-disaster protocols,
+                delivering beyond expectations for data security and system
+                uptime.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                ENSURE REGULATORY COMPLIANCE
+              </h3>
+              <p>
+                Align with compliance effortlessly. Our backup-disaster
+                solutions seamlessly integrate regulatory standards,
+                safeguarding against infractions.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                READINESS AND RECOVERY
+              </h3>
+              <p>
+                Quick recovery, minimal loss. Our meticulous planning ensures
+                your readiness for swift, effective data and service
+                restoration.
+              </p>
+            </div>
+          </section>
+        </main>
+      </main>
+
+      {/* main3 */}
+      <main className="container text-gray-700 text-2xl font-semibold mx-auto my-auto px-16 py-4 bg-gray-200 rounded-lg mb-8">
+        <div className=" text-center mb-8 mt-12">
+          <h2 className="text-6xl font-bold text-teal-600">
             FEATURED SERVICES
           </h2>
-          <p className="font-semibold text-gray-600 text-2xl mb-2">
+          <p className="font-semibold font-serif text-gray-700 text-5xl mb-4 mt-4">
             Your Partners in Resilience and Continuity.
           </p>
-          <p className="font-semibold text-xl">
+          <p className="text-gray-600 font-bold text-4xl">
             Discover how The Scale Factory can help you develop a best-in-class
             backup strategy and a bulletproof disaster recovery plan.
           </p>
         </div>
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-2">
           <div className="p-6 rounded-lg">
             <div className="flex justify-center items-center" />
             <svg
-              className="h-40 w-40  text-gray-500"
+              className="h-40 w-40  text-gray-600"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -114,43 +131,38 @@ const BachupDisaster = () => {
               />
             </svg>
             <br />
-            <h3 className="text-2xl font-bold text-gray-600 mb-4">
+            <h3 className="text-3xl font-bold text-gray-700 mb-2">
               BACKUP SERVICES
             </h3>
             <p>
-              Reliability through redundancy. Centralized backup services to
-              ensure your business data is always secure, recoverable, and
-              resilient against any eventuality. Delivered at a fixed cost, our
-              solutions provide the assurance you need to focus on your
-              business, not on data loss concerns.
+              Guaranteed data security and recovery. Our centralized backup
+              services offer reliability at a fixed cost, prioritizing your
+              business focus.
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-4 bg-gray-600 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
           </div>
           <div className="p-6 rounded-lg">
             <br />
-            <h3 className="text-2xl font-bold text-gray-600 mb-4">
+            <h3 className="text-3xl font-bold text-gray-700 mb-2">
               BACKUP & DISASTER RECOVERY REVIEW
             </h3>
             <p>
-              Custom solutions for uncompromised continuity. Our expert analysis
-              will ensure your backup and disaster recovery plans are not only
-              robust but also tailored to your specific business needs and
-              compliance requirements, leaving no stone unturned in protecting
-              your assets.
+              Ensure continuity with our customized backup and disaster recovery
+              review, tailored to your business and compliance needs.
             </p>
             <a
               href="#"
-              className="inline-block mt-4  bg-gray-500 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-4  bg-gray-600 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
             <svg
-              className="h-40 w-40 mx-60 text-gray-500"
+              className="h-40 w-40 mx-60 text-gray-600"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -167,7 +179,7 @@ const BachupDisaster = () => {
 
           <div className="p-6 rounded-lg">
             <svg
-              className="h-40 w-40 text-gray-500"
+              className="h-40 w-40 text-gray-600"
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"
@@ -181,40 +193,36 @@ const BachupDisaster = () => {
               <path d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h2" />
             </svg>
             <br />
-            <h3 className="text-2xl font-bold text-gray-600 mb-4">
+            <h3 className="text-3xl font-bold text-gray-700 mb-2">
               CRISIS MANAGEMENT PLANNING
             </h3>
             <p>
-              Preparedness that empowers. Instead of merely reacting to
-              disasters, we help you stay two steps ahead. Our crisis management
-              planning equips you with the strategies and tools needed to handle
-              unforeseen events, ensuring minimal downtime and sustained
-              operations.
+              Proactive crisis management for assured business stability. Our
+              strategic planning keeps your operations consistent and prepared.
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500  hover:bg-teal-500 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-4 bg-gray-600  hover:bg-teal-600 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
           </div>
           <div className="p-6 rounded-lg">
             <br />
-            <h3 className="text-2xl font-bold text-gray-600 mb-4">SUPPORT</h3>
+            <h3 className="text-3xl font-bold text-gray-700 mb-2">SUPPORT</h3>
             <p>
-              Your ally in uninterrupted service. Maintain your business’s
-              momentum with our continuous support. Ensure your SaaS platform
-              remains aligned with the evolving demands of your business,
-              helping you retain customers and minimize disruption.
+              Continuous support to keep your business dynamic. Our services
+              align with your evolving needs, fostering customer retention and
+              operational stability.
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-4 bg-gray-600 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
             <svg
-              className="h-40 w-40 mx-60 text-gray-500"
+              className="h-40 w-40 mx-60 text-gray-600"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -229,7 +237,6 @@ const BachupDisaster = () => {
           </div>
         </section>
       </main>
-      <hr className=" border-teal-500 border-[10px] dark:border-gray-700 "></hr>
     </>
   );
 }

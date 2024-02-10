@@ -1,68 +1,186 @@
-/* eslint-disable no-script-url */
-import React from 'react'
+/* eslint-disable jsx-a11y/alt-text */
+
+
+// import developer from "../assets/pictures/developer.jpg";
+import developer from "../assets/pictures/time2.jpg";
+import Time from "../assets/pictures/time.jpg";
 
 const FullStack = () => {
-  const team = [
-    {
-        avatar: "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-        name: "Martiana dialan",
-        title: "Product designer",
-        linkedin: "javascript:void(0)",
-        twitter: "javascript:void(0)",
-    },
-  
-    {
-        avatar: "https://randomuser.me/api/portraits/women/63.jpg",
-        name: "Lysa sandiago",
-        title: "Head of designers",
-        linkedin: "javascript:void(0)",
-        twitter: "javascript:void(0)",
-    },
-   
-]
   return (
-    <section className="py-14">
-            <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="max-w-xl">
-                    <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        Meet our team
-                    </h3>
-                    <p className="text-gray-600 mt-3">
-                    We develop dynamic websites or applications using modern web technologies, various programming languages and database systems. We also offer innovative solutions by keeping up with constantly changing technology trends. We work with our versatile professional developers who specialize in user interface design, server and database functions at all stages of the website project.
-                    </p>
-                </div>
-                <div className="mt-12">
-                    <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                        {
-                            team.map((item, idx) => (
-                                <li key={idx} className="flex gap-4 items-center">
-                                    <div className="flex-none w-24 h-24">
-                                        <img
-                                            src={item.avatar}
-                                            className="w-full h-full rounded-full"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div>
-                                        <h4 className="text-gray-700 font-semibold sm:text-lg">{item.name}</h4>
-                                        <p className="text-indigo-600">{item.title}</p>
-                                        <div className="mt-3 flex gap-4 text-gray-400">
-                                            <a href={item.twitter}>
-                                                <svg className="w-5 h-5 duration-150 hover:text-gray-500" fill="currentColor" viewBox="0 0 48 48"><g clip-path="url(#clip0_17_80)"><path fill="currentColor" d="M15.1 43.5c18.11 0 28.017-15.006 28.017-28.016 0-.422-.01-.853-.029-1.275A19.998 19.998 0 0048 9.11c-1.795.798-3.7 1.32-5.652 1.546a9.9 9.9 0 004.33-5.445 19.794 19.794 0 01-6.251 2.39 9.86 9.86 0 00-16.788 8.979A27.97 27.97 0 013.346 6.299 9.859 9.859 0 006.393 19.44a9.86 9.86 0 01-4.462-1.228v.122a9.844 9.844 0 007.901 9.656 9.788 9.788 0 01-4.442.169 9.867 9.867 0 009.195 6.843A19.75 19.75 0 010 39.078 27.937 27.937 0 0015.1 43.5z" /></g><defs><clipPath id="clip0_17_80"><path fill="currentColor" d="M0 0h48v48H0z" /></clipPath></defs></svg>
-                                            </a>
-                                            <a href={item.linkedin}>
-                                                <svg className="w-5 h-5 duration-150 hover:text-gray-500" fill="none" viewBox="0 0 48 48"><g clip-path="url(#clip0_17_68)"><path fill="currentColor" d="M44.447 0H3.544C1.584 0 0 1.547 0 3.46V44.53C0 46.444 1.584 48 3.544 48h40.903C46.407 48 48 46.444 48 44.54V3.46C48 1.546 46.406 0 44.447 0zM14.24 40.903H7.116V17.991h7.125v22.912zM10.678 14.87a4.127 4.127 0 01-4.134-4.125 4.127 4.127 0 014.134-4.125 4.125 4.125 0 010 8.25zm30.225 26.034h-7.115V29.766c0-2.653-.047-6.075-3.704-6.075-3.703 0-4.265 2.896-4.265 5.887v11.325h-7.107V17.991h6.826v3.13h.093c.947-1.8 3.272-3.702 6.731-3.702 7.21 0 8.541 4.744 8.541 10.912v12.572z" /></g><defs><clipPath id="clip0_17_68"><path fill="currentColor" d="M0 0h48v48H0z" /></clipPath></defs></svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
+    <>
+      {/* main1 */}
+      <main className="container  mx-auto px-2 py-2 bg-white">
+        <div className="text-center px- py-2  mb-2 mt-2">
+          {/* img and title */}
+          <div className="flex justify-center items-center">
+            <div>
+              <img src={developer} className=" opacity-[] mr-4 max-h-[400px]" />
             </div>
-        </section>
-  )
-}
+            <div>
+              <h2 className=" text-teal-500 text-7xl font-bold font-sans">
+                WEBSITE DESIGN
+              </h2>
+              <p className=" ml-4 text-yellow-400 text-5xl font-serif font-bold mt-4">
+                Creating User-Friendly Digital Interfaces That Drive Engagement.
+              </p>
+            </div>
+          </div>
+          <hr className="border-teal-500 border-[1.5px] dark:border-gray-700 "></hr>
+        </div>
+      </main>
 
-export default FullStack
+      {/* main2 */}
+      <main className="bg-white">
+        <main className="container font-bold bg-white text-gray-700 mx-auto px-2 py-2">
+          {/* section1 */}
+          <section className="text-xl font-semibold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl  ">
+              <div className="flex justify-center items-center" />
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                ENGAGING DESIGNS
+              </h3>
+              <p>
+                Crafting first impressions online. We design intuitive, engaging
+                websites that embody your brand and smooth the path to customer
+                conversion.
+              </p>
+            </div>
+            <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                UNIVERSAL ACCESS
+              </h3>
+              <p>
+                Seamless browsing on all devices. Our responsive designs ensure
+                a flawless user experience, regardless of how or where your site
+                is accessed.
+              </p>
+            </div>
+            <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                SEO & SPEED
+              </h3>
+              <p>
+                Visually stunning and easily found. Our design process
+                incorporates SEO and swift load times to elevate visibility and
+                user retention.
+              </p>
+            </div>
+            <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                USER EXPERIENCE FOCUSED
+              </h3>
+              <p>
+                Creating inviting online spaces. We focus on user-friendly
+                designs with intuitive navigation, enhancing interaction and
+                engagement.
+              </p>
+            </div>
+            <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                E-COMMERCE & LEADS
+              </h3>
+              <p>
+                Tailored online sales and lead-gen solutions. Our designs drive
+                conversions and cultivate potential clients with efficiency.
+              </p>
+            </div>
+            <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+                CONTINUOUS EVOLUTION
+              </h3>
+              <p>
+                Your site grows with your business. We offer continuous support
+                and insights to keep your digital presence dynamic and aligned
+                with market trends.
+              </p>
+            </div>
+          </section>
+        </main>
+      </main>
+
+      {/* main3 */}
+      <main className="container mx-auto bg-[#fbf4eb] rounded-lg">
+        <div className="text-center opacity-[0.9] border-l-8 border-orange-600 rounded-lg bg-[#f7992d] py-3  mb-2 mt-8"></div>
+
+        {/* div1 */}
+        <div className="text-center px-4 py-2  mb-2 mt-4">
+          {/* img and title */}
+          <div className="flex flex-col items-center justify-center">
+            <img
+              src={Time}
+              className="opacity-[0.9] max-h-80 mb-4"
+              alt="Time Image"
+            />
+            <div>
+              <h2 className="text-6xl font-bold font-sans text-teal-500 mb-4 mt-8">
+                FEATURED SERVICES
+              </h2>
+              <p className=" text-gray-500 text-4xl max-w-4xl font-sans font-bold ">
+                Your Digital Transformation Partner.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section className="font-semibold text-2xl text-gray-600 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mb-4 p-4">
+          <div className="p-6 rounded-lg mb-8">
+            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+              WEB DESIGN EXCELLENCE
+            </h3>
+            <p>
+              Elevate your online presence. Our expertise ensures your website
+              is a strategic, visually appealing gateway to customer conversion.
+            </p>
+          </div>
+          <div className="p-6 rounded-lg">
+            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+              USER EXPERIENCE ENHANCEMENT
+            </h3>
+            <p>
+              Enhance visitor engagement. We prioritize intuitive navigation and
+              interaction, ensuring visitors stay longer and return frequently.
+            </p>
+          </div>
+          <div className="p-6 rounded-lg">
+            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+              RESPONSIVE DESIGN INTEGRATION
+            </h3>
+            <p>
+              Embrace device diversity. Our responsive design guarantees an
+              optimal viewing experience across all platforms.
+            </p>
+          </div>
+          <div className="p-6 rounded-lg">
+            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+              VISIBILITY BOOST
+            </h3>
+            <p>
+              Amplify your online presence. Our SEO and content strategies
+              increase traffic and elevate search rankings.
+            </p>
+          </div>
+          <div className="p-6 rounded-lg">
+            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+              PERFORMANCE TUNING
+            </h3>
+            <p>
+              Ensure rapid, reliable site access. We optimize technical
+              performance for faster loading and smooth browsing.
+            </p>
+          </div>
+          <div className="p-6 rounded-lg">
+            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+              CONVERSION OPTIMIZATION
+            </h3>
+            <p>
+              Convert more visitors. Our data-driven methods improve
+              call-to-action effectiveness and user pathways.
+            </p>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+};
+
+export default FullStack;
