@@ -1,4 +1,4 @@
-// import About from "../assets/pictures/hakkimizda.png";
+import React from 'react';
 
 const AboutUs = () => {
   return (

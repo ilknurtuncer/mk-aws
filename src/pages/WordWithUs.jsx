@@ -101,4 +101,4 @@ const WordWithUs = () => {
     );
 }
 
-export default WordWithUs
+export default WordWithUs;

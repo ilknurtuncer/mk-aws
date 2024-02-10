@@ -14,9 +14,11 @@ import CloudMig from "../services/CloudMig";
 import BachupDisaster from "../services/BachupDisaster";
 import ConstReview from "../services/ConstReview";
 import Performance from "../services/Performance";
-import WebsiteDesing from "../services/WebsiteDesing";
+
 import StorageSolutions from "../services/StorageSolutions";
 import SecurityBusiness from "../services/SecurityBusiness";
+import AboutUs from "../pages/AboutUs";
+import WordWithUs from "../pages/WordWithUs";
 
 
 const AppRouter = () => {
@@ -36,6 +38,8 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/wordwith" element={<WordWithUs/>} />
         <Route path="/fullstack" element={<FullStack />} />
         <Route path="/awsWellAr" element={<AwsWellAr />} />
         <Route path="/BuildAws" element={<BuildAws />} />
@@ -44,7 +48,7 @@ const AppRouter = () => {
         <Route path="/BachupDisaster" element={<BachupDisaster />} />
         <Route path="/ConstReview" element={<ConstReview />} />
         <Route path="/Performance" element={<Performance />} />
-        <Route path="/WebsiteDesing" element={<WebsiteDesing />} />
+        <Route path="/SecurityBusiness" element={<SecurityBusiness/>} />
         <Route path="/StorageSolutions" element={<StorageSolutions />} />
       </Routes>
 

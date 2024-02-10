@@ -29,59 +29,59 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { Link, useNavigate } from "react-router-dom";
-import LogoImage from "../assets/img/AWS-2.png";
+import LogoImage from "../assets/carousel/cloudifiers-logo-mavi-saydam-01.png";
 
 const navListMenuItems = [
   {
-    title: "SecurityBusiness",
+    title: "Security Business",
     description: "",
     icon: SquaresPlusIcon,
     link: "/SecurityBusiness",
   },
   {
-    title: "Build Aws",
+    title: "Build AWS",
     description: "",
     icon: UserGroupIcon,
     link: "/BuildAws",
   },
   {
-    title: "Backup-Dısaster",
+    title: "Backup-Disaster",
     description: "",
     icon: Bars4Icon,
     link: "/BachupDisaster",
   },
   {
-    title: "Cost Revıew",
+    title: "Cost Review",
     description: "",
     icon: SunIcon,
-    link: "ConstReview",
+    link: "/ConstReview",
   },
   {
-    title: "Storage Solutıons",
+    title: "Storage Solutions",
     description: "",
     icon: GlobeAmericasIcon,
     link: "/StorageSolutions",
   },
   {
-    title: "fullstack",
+    title: "Fullstack Design",
     description: "",
     icon: PhoneIcon,
     link: "/fullstack",
   },
   {
-    title: "Cloud Mıgratıon",
+    title: "Cloud Migration",
     description: "",
     icon: NewspaperIcon,
     link: "/CloudMig",
   },
   {
-    title: "Performance Optımısatıon",
+    title: "Performance Optimisation",
     description: "",
     icon: RectangleGroupIcon,
     link: "/Performance",
   },
   {
-    title: "Aws Well-Archıtected Revıew",
+    title: "AWS Well-Architected Review",
     description: "",
     icon: TagIcon,
     link: "/AwsWellAr",
@@ -96,7 +96,7 @@ function NavListMenu() {
       // eslint-disable-next-line no-undef
       <Link to={link} className="font-medium " key={key}>
         <MenuItem className=" flex items-center gap-3 ">
-          <div className="flex items-center justify-center  !bg-blue-gray-50 p-2">
+          <div className="flex items-center justify-center  !bg-teal-500 p-2 rounded">
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
@@ -106,8 +106,8 @@ function NavListMenu() {
           <div>
             <Typography
               variant="h6"
-              color="red"
-              className="flex items-center text-sm font-bold"
+              color=""
+              className="flex items-center text-sm font-bold text-slate-600 hover:text-red-500"
             >
               {title}
             </Typography>
@@ -135,11 +135,11 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-6 font-medium text-slate-200 bg-gray-950"
+              className="flex items-center gap-3 p-1 pr-4 font-semibold text-lg text-teal-500 bg-gray-950 hover:text-white"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              Services
+              SERVICES
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -177,36 +177,43 @@ function NavList() {
         as={Link}
         to="/"
         variant="small"
-        color="red"
-        className="font-medium"
+        color="teal"
+        className="font-semibold text-lg hover:text-white"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-6">Home</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-6">HOME</ListItem>
       </Typography>
       <NavListMenu />
       <Typography
         as={Link}
-        to="/"
+        to="/about"
         variant="small"
-        color="red"
-        className="font-medium"
+        color="teal"
+        className="font-semibold text-lg hover:text-white"
       >
-      <ListItem className="flex items-center gap-2 py-2 pr-6">About</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-6">ABOUT</ListItem>
       </Typography>
       <Typography
         as={Link}
-        to="/"
+        to="/wordwith"
         variant="small"
-        color="red"
-        className="font-medium"
+        color="teal"
+        className="font-semibold text-lg hover:text-white"
       >
-      <ListItem className="flex items-center gap-2 py-2 pr-6">Word With</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-6">
+          WORK WITH US
+        </ListItem>
       </Typography>
-      <Typography as="div" variant="small" color="red" className="font-medium">
+      <Typography
+        as="div"
+        variant="small"
+        color="teal"
+        className="font-semibold text-lg hover:text-white"
+      >
         <ListItem
           className="flex items-center gap-2 py-2 pr-6"
           onClick={() => navigate("/contact")}
         >
-          Contact
+          CONTACT
         </ListItem>
       </Typography>
     </List>
@@ -230,16 +237,16 @@ export function NavbarWithMegaMenu() {
           src={LogoImage}
           alt="MK-AWS Logo"
           className="mr-4 cursor-pointer lg:ml-2"
-          style={{ maxWidth: "100px" }} // İsteğe bağlı olarak genişliği ayarlayabilirsiniz
+          style={{ maxWidth: "150px" }} // İsteğe bağlı olarak genişliği ayarlayabilirsiniz
         />
-        <Typography
+        {/* <Typography
           as="a"
           href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2 font-serif text-2xl text-yellow-400"
+          variant="h7"
+          className=" cursor-pointer py-2 lg:ml-2 font-bold text-4xl text-gray-200"
         >
-          Cloudifiers TM
-        </Typography>
+          CLOUDIFİERS
+        </Typography> */}
 
         <div className="hidden lg:block">
           <NavList />
