@@ -1,23 +1,22 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import Push from "../assets/pictures/undraw_Push_notifications_re_t84m.png";
-import Delivery from "../assets/pictures/undraw_delivery_truck_vt6p.png";
-import Contact from "../assets/pictures/undraw_Contact_us_re_4qqt.png";
-// import Connection from "../assets/pictures/undraw_Connection_re_lcud.png";
+
+import Push from "../assets/pictures/svg-b.png";
+import Delivery from "../assets/pictures/partners_new.png";
+import Contact from "../assets/pictures/rocht-ab-tullinge-kontakt-1.png";
+
 const BuildAws = () => {
   return (
     <>
       {/* ===main1=== */}
-      <main className="container text-gray-700 mx-auto px- py-2 bg-white">
+      <main className="container text-gray-700 mx-auto bg-white m-2 p-2">
         {/* ####section#### 1 */}
         <div className=" px- py-2  mb-2 mt-10">
-          <h2 className="text-4xl font-bold font-serif text-blue-600 mb-2">
+          <h2 className="max-w-auto text-6xl font-bold font-sans text-teal-500 mb-4 ">
             BUILD AWS INFRASTRUCTURE
           </h2>
-          <p className="text-3xl text-gray-700 font-serif font-bold mb-2 ">
+          <p className="text-5xl max-w-2xl text-gray-700 font-serif font-bold mb-4">
             Accelerate Your Cloud Infrastructure with Expertise and Partnership
           </p>
-          <hr class="border-blue-400 border-[1.5px] dark:border-gray-700 mb-4"></hr>
+          <hr class="border-teal-400 border-[1.5px] dark:border-gray-700 mb-4"></hr>
           <p className="mb-4 font-semibold text-3xl">
             Building a robust AWS infrastructure is pivotal to your cloud
             journey. Partner with us to gain access to top-tier engineering
@@ -27,40 +26,34 @@ const BuildAws = () => {
             AWS environment.
           </p>
         </div>
-        <section className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-2">
+        <section className="text-2xl font-semibold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-2">
           {/* =====a1==== */}
           <a
             href="#"
-            className="text-lg shadow-lg shadow-blue-400  flex flex-col items-center bg-white border border-purple-200 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="text-lg shadow-lg shadow-teal-500  flex flex-col items-center bg-white border border-purple-200 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
           >
-            <article className="rounded p-2 h-full bg-blue-500"></article>
+            <article className="rounded p-2 h-full bg-teal-500"></article>
 
-            <div className=" flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700 dark:text-white">
+            <div className="  flex flex-col justify-between p-4 leading-normal">
+              <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-700 dark:text-white">
                 Why Choose Us?
               </h5>
-              <p className="mb-3 font-semibold text-gray-700 dark:text-gray-400">
+              <p className="mb-3 text-gray-700 dark:text-gray-400">
                 Collaborative Builds: We work alongside your team, not just for
                 them, fostering a collaborative environment that ensures a deep
-                understanding of the infrastructure from the ground up. No
-                Handover Hassles: With our model, your team becomes
-                self-sufficient, eliminating the need for extensive handovers.
-                You own the process and the product from day one. Tailored
-                Expertise: Our AWS-certified engineers don't just build; they
-                mentor and explain, leaving your team with not just a system,
-                but the rationale behind it.
+                understanding of the infrastructure from the ground up.
               </p>
             </div>
           </a>
           {/* ====a2===== */}
           <a
             href="#"
-            className="text-lg shadow-lg shadow-blue-400 flex flex-col items-center bg-white border border-purple-200 rounded-lg md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="text-lg shadow-lg shadow-teal-500 flex flex-col items-center bg-white border border-purple-200 rounded-lg md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
           >
-            <article className="rounded p-2 h-full bg-blue-500"></article>
+            <article className="rounded p-2 h-full bg-teal-500"></article>
 
             <div className="flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700 dark:text-white">
+              <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-700 dark:text-white">
                 Continuity of Support
               </h5>
               <p className="mb-3 font-semibold text-gray-700 dark:text-gray-400">
@@ -73,16 +66,16 @@ const BuildAws = () => {
           {/* ======a3===== */}
           <a
             href="#"
-            className="text-lg shadow-lg shadow-blue-400 flex flex-col items-center bg-white border border-purple-200 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="text-lg shadow-lg shadow-teal-500 flex flex-col items-center bg-white border border-purple-200 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
           >
-            <article className="rounded p-2 h-full bg-blue-500"></article>
+            <article className="rounded p-2 h-full bg-teal-500"></article>
             {/* <img
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
               src="Part3"
               alt=""
             /> */}
             <div className=" flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700 dark:text-white">
+              <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-700 dark:text-white">
                 Engage with Our AWS Specialists
               </h5>
               <p className="font-semibold text-gray-700 dark:text-gray-400">
@@ -95,22 +88,21 @@ const BuildAws = () => {
           </a>
         </section>
         <div className="px- py-2  mb-2 mt-8">
-          <h2 className="text-4xl font-bold font-sans text-indigo-600 mb-4 mt-16">
+          <h2 className="text-6xl font-bold font-sans text-teal-500 mb-4 mt-16">
             Your AWS Partner for Growth
           </h2>
-          <p className="text-2xl font-serif font-bold mb-4 ">
+          <p className="text-3xl font-sans font-bold mb-4 ">
             The Scale Factory is your dedicated partner in optimizing AWS cloud
-            solutions to enhance agility, <br /> accelerate innovation, and drive
-            success for dynamic small and medium-sized enterprises.
+            solutions to enhance agility, <br /> accelerate innovation, and
+            drive success for dynamic small and medium-sized enterprises.
           </p>
-          <hr class="border-purple-400 border-[1.5px] dark:border-gray-700 "></hr>
-          {/* <div className="bg-orange-500 h-1"></div> */}
+          <hr class="border-teal-400 border-[1.5px] dark:border-gray-700 "></hr>
         </div>
-        <section className="text-md font-semibold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <section className="text-gray-700 text-xl font-semibold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           <div className="p-6 rounded-lg">
             <div className="flex justify-center items-center" />
             <img src={Push} className="max-w-full h-auto" />
-            <h3 className="text-2xl font-bold font-serif text-indigo-600 mb-4">
+            <h3 className="text-3xl font-bold font-serif text-gray-700 mb-4">
               DEPLOY
             </h3>
             <p className="">
@@ -122,7 +114,7 @@ const BuildAws = () => {
             </p>
           </div>
           <div className="p-6 rounded-lg">
-            <h3 className="text-2xl font-bold font-serif text-indigo-600 mb-4">
+            <h3 className="text-3xl font-bold font-serif text-gray-700 mb-4">
               MIGRATE
             </h3>
             <p>
@@ -136,7 +128,7 @@ const BuildAws = () => {
           </div>
           <div className="p-6 rounded-lg">
             <img src={Contact} className="max-w-full h-auto" />
-            <h3 className="text-2xl font-bold font-serif text-indigo-600 mb-4">
+            <h3 className="text-3xl font-bold font-serif text-gray-700 mb-4">
               UPGRADE
             </h3>
             <p>
@@ -147,25 +139,12 @@ const BuildAws = () => {
             </p>
           </div>
         </section>
-        {/* alt açıklama */}
-        <div className="text-center border-l-8 border-blue-700 rounded-lg bg-purple-400 px- py-2  mb-2 mt-8">
-          <p className=" text-gray-800 font-sans font-bold">
-            Discover the Cloudifiers difference and how our expertise can
-            revolutionize your business operations. <br /> Get in touch today to
-            begin your journey to the cloud.
-          </p>
-          <div>
-            <p className="font-bold text-blue-700 ">
-              iletişim tel: <span className="text-black">0546 546####</span>{" "}
-            </p>
-          </div>
-        </div>
       </main>
       {/* ====main2==== */}
-      <main className="container mx-auto px-4 py-2 bg-gray-100 rounded-lg">
+      <main className="container text-gray-600 font-semibold mx-auto mt-8 mb-8 p-8 bg-gray-100 rounded-lg">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-600 mb-4 mt-6">
-            DISCOVER HOW WE CAN HELP YOU.
+            DISCOVER HOW WE CAN HELP YOU
           </h2>
         </div>
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -189,15 +168,13 @@ const BuildAws = () => {
               CONSULTING PACKAGES
             </h3>
             <p>
-              Advice, engineering, and training to overcome your unique
-              challenges. Our consulting packages are crafted to solve specific
-              problems faced by small and medium-sized businesses, offering
-              solutions at a fixed price. Benefit from our expertise to
-              streamline your operations and enhance efficiency.
+              Tailored advice, engineering, and training designed to meet the
+              unique needs of small and medium-sized businesses. Fixed-price
+              solutions to optimize operations and elevate efficiency.
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-8 bg-gray-500 hover:bg-teal-500 text-white font-bold py-2 px-4  rounded"
             >
               Learn More
             </a>
@@ -217,20 +194,17 @@ const BuildAws = () => {
               <polyline points="2 17 12 22 22 17" />{" "}
               <polyline points="2 12 12 17 22 12" />
             </svg>
-            <br />
-            <h3 className="text-2xl font-bold text-gray-600 mb-4">
+            <h3 className="text-2xl font-bold text-gray-600 mb-4 mt-6">
               GROWTH SOLUTIONS
             </h3>
             <p>
-              Custom AWS solutions, designed for the growth trajectory of your
-              business. Every small and medium-sized business has its own path.
-              Our growth solutions are personalized, ensuring your AWS
-              infrastructure scales as your business expands, supporting your
-              goals every step of the way.
+              Personalized AWS solutions that grow with your enterprise. Our
+              services are customized to support and adapt to your business's
+              expanding ambitions.
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-8 bg-gray-500 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
@@ -255,15 +229,13 @@ const BuildAws = () => {
               SUPPORT SERVICES
             </h3>
             <p>
-              Continuous, dedicated support tailored for your business needs.
-              Establish a partnership with a team that's committed to your
-              business's continuous improvement. Our support services give you
-              anytime access to AWS expertise, allowing you to fully utilize
-              cloud technology to drive your business forward.
+              Reliable, ongoing support customized to your needs. Partner with
+              us for dedicated assistance and expert AWS guidance to propel your
+              business forward.
             </p>
             <a
               href="#"
-              className="inline-block mt-4 bg-gray-500  hover:bg-purple-500 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-8 bg-gray-500  hover:bg-teal-500 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>

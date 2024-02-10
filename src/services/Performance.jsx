@@ -1,107 +1,97 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 
-import Optimization from "../assets/pictures/optimization.jpg";
+import Optimization from "../assets/images/Bulut8.jpg";
 
 const Performance = () => {
   return (
     <>
       {/* main1 */}
-      <main className="text-center bg-[#36b6abee] py-2 ">
+      <main className="  flex justify-center items-center text-center mt-10 py-2 ">
         {/* img and title */}
-        <div className="flex justify-center items-center">
-          <div className="">
-            <img src={Optimization} className="opacity-[0.8] max-h-80 " />
+        <div className=" container rounded border-l-8 border-teal-700 bg-[#a4d6d6] flex justify-center items-center">
+          <div>
+            <img src={Optimization} className="opacity-[0.8]  max-h-80" />
           </div>
-          <div className="">
-            <h2 className="text-3xl text-left font-bold font-sans text-zinc-700  m-4  ">
+          
+          <div className=" text-left m-10">
+            <h2 className=" text-5xl font-bold font-sans text-zinc-700 mb-4  ">
               PERFORMANCE OPTIMISATION
             </h2>
-            <p className=" mr-2 text-teal-800 text-2xl font-serif font-bold ">
-              Elevate your operational efficiency
+            <p className="text-6xl text-teal-800  font-sans font-bold ">
+              Boost Your System's Capability
             </p>
           </div>
         </div>
-
-        <hr className="border-teal-700 border-[1.5px] dark:border-gray-700 "></hr>
         {/* <div className="bg-orange-500 h-1"></div> */}
       </main>
       {/* main2 */}
-      <main className="bg-zinc-100 ">
-        <main className="container font-bold bg-zinc-100 text-gray-700 mx-auto px-2 py-2 ">
+      <main className="bg-white ">
+        <main className="container font-bold bg-white text-gray-700 mx-auto px-2 py-2 ">
           {/* section1 */}
-          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <section className="text-2xl font-semibold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             <div className="p-6 rounded-lg">
               <div className="flex justify-center items-center" />
 
               {/* <img src={Push} className="max-w-full h-auto" /> */}
-              <h3 className="text-2xl font-bold  text-teal-500 mb-4">
+              <h3 className="text-4xl font-bold  text-teal-500 mb-4">
                 ENSURE PEAK PERFORMANCE
               </h3>
               <p>
-                In today's fast-paced digital world, optimizing your
-                infrastructure is not just an improvement, it's a necessity.
-                With AWS and The Scale Factory, gain access to the leading-edge
-                skills, tools, and expertise required to fine-tune your
-                platform. We ensure it's not only meeting today's demands but is
-                also ready to adapt to tomorrow's growth.
+                In our digital age, optimal infrastructure is critical. With
+                Cloudifiers' guidance and AWS's cutting-edge resources, we
+                ensure your platform not only meets today's needs but is primed
+                for future challenges.
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
                 PERFORMANCE OBJECTIVES
               </h3>
               <p>
-                Target high efficiency, achieve higher satisfaction. We help you
-                set and reach ambitious performance objectives that matter to
-                your business—whether it’s reducing latency, increasing uptime,
-                or maximizing throughput. Ensure your infrastructure
-                consistently meets and exceeds the expectations of your clients.
+                Aim high, satisfy more. We aid in setting and achieving key
+                performance goals—be it reducing delays, increasing
+                availability, or enhancing data flow—ensuring your
+                infrastructure's peak operation aligns with client expectations.
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
                 TECHNICAL ARCHITECTURE
               </h3>
               <p>
-                Build on a foundation designed for growth. The right
-                architecture is key to scalable performance. We guide you in
-                selecting the optimal resources and services for your workload,
-                ensuring that your system is both resilient and agile, ready to
-                grow with your business.
+                Foundation for growth. We navigate you through selecting the
+                best AWS resources and services, ensuring a robust and adaptable
+                system poised for expansion.
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
                 PERFORMANCE ANALYSIS
               </h3>
               <p>
-                Insight-driven enhancements. Continuously monitor and analyze
-                your infrastructure to ensure it operates at peak performance.
-                We help you identify potential bottlenecks and fine-tune your
-                resources, ensuring efficiency and a seamless user experience.
+                Monitor, refine, excel. Our continuous analysis pinpoints and
+                resolves any inefficiencies, ensuring smooth operation and
+                optimal user experience.
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
                 STRATEGIC GROWTH PLANNING
               </h3>
               <p>
-                Plan for success, prepare for scale. As your business grows, so
-                do your system's demands. We provide strategic planning and load
-                testing services to guarantee that your platform is ready to
-                handle increasing volumes without compromising on performance.
+                Strategize for expansion. Our services evolve with your
+                business, providing strategic insights and stress tests to
+                prepare your platform for scaling up without performance loss.
               </p>
             </div>
             <div className="p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-teal-500 mb-4">
+              <h3 className="text-4xl font-bold text-teal-500 mb-4">
                 CONTINUOUS REVIEW
               </h3>
               <p>
-                Adapt and thrive in a changing landscape. AWS’s evolving
-                ecosystem requires a dynamic optimization strategy. We engage in
-                ongoing reviews and adjustments to ensure your platform remains
-                at the forefront of operational excellence.
+                Stay current and competitive. We proactively refine your system
+                within AWS's dynamic ecosystem, keeping your operations at peak
+                efficiency.
               </p>
             </div>
           </section>
@@ -109,28 +99,28 @@ const Performance = () => {
       </main>
 
       {/* main3 */}
-      <main className="bg-[#36b6abee]">
-        <div className="bg-[#36b6abee] h-2"></div>
-        <hr className="border-teal-700 border-[1.5px] dark:border-gray-700 "></hr>
-        <main className="container  text-gray-700 font-semibold mx-auto px-4 py-2 mb-2 ">
-          <div className=" text-center mb-8">
-            <h2 className="text-3xl font-bold text-zinc-700  mb-2 mt-6">
+      <main className="mt-14 mb-14 opacity-[0.9]">
+        <main className="container bg-gray-100  text-gray-700 font-semibold mx-auto px-4 py-2 mb-2 rounded-lg border">
+          {/* <div className=" h-2"></div>
+          <hr className="border-[#36b6abee] border-[1.5px] dark:border-gray-700 "></hr> */}
+          <div className="text-center ">
+            <h2 className="text-6xl font-bold text-zinc-700  mb-8 mt-8">
               FEATURED SERVICES
             </h2>
-            <p className="font-semibold font-serif text-2xl text-teal-800 ">
+            <p className="font-bold font-sans text-5xl  text-teal-800 mt-4 mb-4">
               Your Pathway to Enhanced Efficiency and Scalability
             </p>
-            <p className="font-semibold font-serif text-xl text-zinc-700 mt-2 ">
-              Discover how The Scale Factory can help you optimize the <br />
-              performance of your infrastructure and future-proof your platform
-              for years to come.
+            <p className="font-semibold font-serif text-3xl text-zinc-700 mt-4 mb-8 ">
+              Discover how The Scale Factory can help you optimize the
+              performance <br /> of your infrastructure and future-proof your
+              platform for years to come.
             </p>
           </div>
-          <section className="grid text-zinc-800 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-6 rounded-lg">
+          <section className=" text-2xl font-semibold grid text-zinc-800 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="p-6 ">
               <div className="flex justify-center items-center" />
               <svg
-                className="h-40 w-40  text-zinc-600"
+                className="h-40 w-40  text-zinc-700"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -143,24 +133,24 @@ const Performance = () => {
                 />
               </svg>
               <br />
-              <h3 className="text-2xl font-bold text-zinc-700  mb-4">
-                EFFICIENCY EVALUATION
+              <h3 className="text-3xl font-bold text-zinc-700  mb-4">
+                PERFORMANCE OPTIMISATION SERVICES
               </h3>
               <p>
-                Discover how to enhance your operations with our Efficiency
-                Evaluation, where we assess how to save on costs while improving
-                the overall performance of your infrastructure.
+                Power up your infrastructure. Our bespoke services enhance
+                efficiency and reliability, supporting your immediate needs and
+                future expansion.
               </p>
               <a
                 href="#"
-                className="inline-block mt-4 bg-zinc-600 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                className="inline-block mt-12 bg-zinc-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
               >
                 Learn More
               </a>
             </div>
             <div className="p-6 rounded-lg">
               <svg
-                className="h-40 w-40 text-zinc-600"
+                className="h-40 w-40 text-zinc-700"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -174,17 +164,17 @@ const Performance = () => {
                 <polyline points="2 12 12 17 22 12" />
               </svg>
               <br />
-              <h3 className="text-2xl font-bold text-zinc-700  mb-4">
-                EXPENDITURE ANALYSIS
+              <h3 className="text-3xl font-bold text-zinc-700  mb-4">
+                AWS WELL-ARCHITECTED REVIEW
               </h3>
               <p>
-                Dive deep into your spending patterns with our Expenditure
-                Analysis service. We'll pinpoint areas where you can cut back
-                without sacrificing quality or productivity.
+                In-depth insights for a solid foundation. Our AWS
+                Well-Architected Review uncovers opportunities to save costs and
+                bolster your system’s architecture.
               </p>
               <a
                 href="#"
-                className="inline-block mt-4  bg-zinc-600 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                className="inline-block mt-4  bg-zinc-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
               >
                 Learn More
               </a>
@@ -192,7 +182,7 @@ const Performance = () => {
 
             <div className="p-6 rounded-lg">
               <svg
-                className="h-40 w-40 text-zinc-600"
+                className="h-40 w-40 text-zinc-700"
                 viewBox="0 0 24 24"
                 strokeWidth={2}
                 stroke="currentColor"
@@ -206,25 +196,25 @@ const Performance = () => {
                 <path d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h2" />
               </svg>
               <br />
-              <h3 className="text-2xl font-bold text-zinc-700  mb-4">
-                RESOURCE OPTIMIZATION SUPPORT
+              <h3 className="text-3xl font-bold text-zinc-700  mb-4">
+                PROACTIVE SUPPORT
               </h3>
               <p>
-                Our Resource Optimization Support goes beyond mere advice. We
-                provide ongoing assistance to ensure your operations are lean
-                and your resources are utilized to their fullest potential.
+                Always ahead. With our continuous support, your platform
+                operates flawlessly, ensuring you stay competitive and
+                responsive to market dynamics.
               </p>
               <a
                 href="#"
-                className="inline-block mt-4 bg-zinc-600  hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                className="inline-block mt-12 bg-zinc-700  hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
               >
                 Learn More
               </a>
             </div>
           </section>
+          {/* <hr className="border-[#36b6abee] border-[1.5px] dark:border-gray-700 "></hr>
+          <div className="bg-zinc-100   h-1"></div> */}
         </main>
-        <hr className="border-teal-800 border-[1.5px] dark:border-gray-700 "></hr>
-        <div className="bg-[#36b6abee]   h-2"></div>
       </main>
     </>
   );
