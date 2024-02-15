@@ -19,6 +19,7 @@ import StorageSolutions from "../services/StorageSolutions";
 import SecurityBusiness from "../services/SecurityBusiness";
 import AboutUs from "../pages/AboutUs";
 import WordWithUs from "../pages/WordWithUs";
+import AboutUsFooter from "../pages/AboutUsFooter";
 
 
 const AppRouter = () => {
@@ -50,6 +51,7 @@ const AppRouter = () => {
         <Route path="/Performance" element={<Performance />} />
         <Route path="/SecurityBusiness" element={<SecurityBusiness/>} />
         <Route path="/StorageSolutions" element={<StorageSolutions />} />
+        <Route path="/About-us" element={<AboutUsFooter/>} />
       </Routes>
 
       <FooterWithSitemap />
