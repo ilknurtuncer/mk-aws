@@ -216,6 +216,19 @@ function NavList() {
           CONTACT
         </ListItem>
       </Typography>
+      <Typography
+        as="div"
+        variant="small"
+        color="teal"
+        className="font-semibold text-lg hover:text-white"
+      >
+        <ListItem
+          className="flex items-center gap-2 py-2 pr-6"
+          onClick={() => navigate("/Insıght")}
+        >
+         INSIGHT 
+        </ListItem>
+      </Typography>
     </List>
   );
 }
