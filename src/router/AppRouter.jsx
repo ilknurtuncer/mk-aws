@@ -20,6 +20,7 @@ import SecurityBusiness from "../services/SecurityBusiness";
 import AboutUs from "../pages/AboutUs";
 import WordWithUs from "../pages/WordWithUs";
 import AboutUsFooter from "../pages/AboutUsFooter";
+import Insıght from "../pages/Insıght";
 
 
 const AppRouter = () => {
@@ -40,6 +41,7 @@ const AppRouter = () => {
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/Insıght" element={<Insıght/>}/>
         <Route path="/wordwith" element={<WordWithUs/>} />
         <Route path="/fullstack" element={<FullStack />} />
         <Route path="/awsWellAr" element={<AwsWellAr />} />

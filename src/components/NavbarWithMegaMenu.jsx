@@ -224,7 +224,7 @@ function NavList() {
       >
         <ListItem
           className="flex items-center gap-2 py-2 pr-6"
-          onClick={() => navigate("/ınsıght")}
+          onClick={() => navigate("/Insıght")}
         >
          INSIGHT 
         </ListItem>

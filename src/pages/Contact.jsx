@@ -19,7 +19,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "Support@example.com",
+    contact: "info@cloudifiers.co.uk",
   },
   {
     icon: (
@@ -38,7 +38,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "+1 (555) 000-000",
+    contact: "+447490785149",
   },
   {
     icon: (
@@ -62,7 +62,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "Mountain View, California, United State.",
+    contact: "244 Chase Road, London, United Kingdom, N14 6HH",
   },
 ];
 
@@ -121,8 +121,8 @@ const Contact = () => {
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
           <div className="max-w-lg space-y-3">
-            <h3 className="text-indigo-600 font-semibold">
-              Contact
+            <h3 className="text-teal-500 text-3xl font-semibold">
+            Let us know how we can help
             </h3>
             <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
               Let us know how we can help
@@ -160,7 +160,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-emerald-300 shadow-sm rounded-lg"
                 />
               </div>
               <div>
@@ -173,11 +173,11 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-emerald-300 shadow-sm rounded-lg"
                 />
               </div>
               <div>
-                <label className="font-medium">
+                <label className="font-medium text-lg">
                   Company
                 </label>
                 <input
@@ -186,7 +186,7 @@ const Contact = () => {
                   value={formData.company}
                   onChange={handleChange}
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-emerald-300 shadow-sm rounded-lg"
                 />
               </div>
               <div>
@@ -198,12 +198,12 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-emerald-300 shadow-sm rounded-lg"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
+                className="w-full px-4 py-2 text-white font-medium text-lg bg-teal-500 hover:bg-teal-700 active:bg-teal-700 rounded-lg duration-150"
               >
                 Submit
               </button>
