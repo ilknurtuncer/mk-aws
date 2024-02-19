@@ -120,13 +120,11 @@ const Contact = () => {
     <main className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
-          <div className="max-w-lg space-y-3">
-            <h3 className="text-teal-500 text-3xl font-semibold">
+          <div className="max-w-lg space-y-3 ">
+            <h3 className="text-teal-500 text-4xl font-semibold">
             Let us know how we can help
             </h3>
-            <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-              Let us know how we can help
-            </p>
+            
             <p>
               We’re here to help and answer any question you might have. We look forward to hearing from you! Please fill out the form, or use the contact information below.
             </p>
