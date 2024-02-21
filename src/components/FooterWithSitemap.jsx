@@ -5,14 +5,12 @@ import { Link } from "react-router-dom";
 const SITEMAP = [
   {
     title: "Company",
-    links: ["About Us", "Cookies", "Privacy Policy"],
+    links: ["Contact","About Us", "Cookies", "Privacy"],
   },
+ 
   {
-    title: "Help Center",
-    links: ["Contact Us"],
-  },
-  {
-    title: "With our expertise in cloud computing and relentless pursuit of excellence, we empower businesses to thrive in the digital age.",
+    title: " Cloudifiers ",
+   
     links: [""],
   },
 ]
@@ -22,37 +20,58 @@ const currentYear = new Date().getFullYear();
 
 export function FooterWithSitemap() {
   return (
-    <footer className="relative w-full bg-gray-900">
+    <footer className="relative w-full bg-black">
       <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
-          {SITEMAP.map(({ title, links }, key) => (
-            <div key={key} className="w-full">
-              <Typography
-                variant="small"
-                color="white"
-                className="mb-4 font-bold  opacity-50 "
-              >
-                {title}
-              </Typography>
-              <ul className="space-y-1">
-                {links.map((link, key) => (
-                  <Typography
-                    key={key}
-                    as="li"
-                    color="white"
-                    className="font-normal"
-                  >
-                    <Link
-                      to={link === "About Us" ? "/about-us" : "#"}
-                      className="inline-block py-1 pr-2 transition-transform hover:scale-125 hover:text-red-300"
-                    >
-                      {link}
-                    </Link>
-                  </Typography>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="mx-auto grid w-full grid-cols-1 gap-8 py-8 md:grid-cols-2 lg:grid-cols-4">
+        {SITEMAP.map(({ title, links }, key) => (
+  <div key={key} className="w-full">
+    {title !== " Cloudifiers " ? (
+      <Typography
+        variant="small"
+        color="white"
+        className="mb-3 font-bold  text-teal-400"
+      >
+        {title}
+      </Typography>
+    ) : (
+      <div className=" items-center ">
+        <Typography
+          variant="small"
+          color="white"
+          className="font-bold mr-2  text-teal-400"
+        >
+          {title}
+        </Typography>
+       
+        <svg className=" mt-6 w-5 h-5 text-teal-300 dark:text-white opacity-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <path fill-rule="evenodd" d="M12 2a8 8 0 0 1 6.6 12.6l-.1.1-.6.7-5.1 6.2a1 1 0 0 1-1.6 0L6 15.3l-.3-.4-.2-.2v-.2A8 8 0 0 1 11.8 2Zm3 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" clip-rule="evenodd"/>
+  </svg>
+  <p className="text-white mt-1">
+  244 Chase Road, London, United Kingdom, N14 6HH
+  </p>
+  
+      </div>
+    )}
+    <ul className="space-y-1">
+      {links.map((link, key) => (
+        <Typography
+          key={key}
+          as="li"
+          color="white"
+          className="font-normal"
+        >
+          <Link
+            to={link === "About Us" ? "/about-us" : `/${link.toLowerCase().replace(/\s+/g, "-")}`}
+            className="inline-block py-1 pr-2 transition-transform hover:scale-125 hover:text-red-300"
+          >
+            {link}
+          </Link>
+        </Typography>
+      ))}
+    </ul>
+  </div>
+))}
+
         </div>
         <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
@@ -67,7 +86,7 @@ export function FooterWithSitemap() {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150 hover:text-teal-400"
             >
               <svg
                 className="h-8 w-8"
@@ -85,7 +104,7 @@ export function FooterWithSitemap() {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150 hover:text-teal-400"
             >
               <svg
                 className="h-8 w-8"
@@ -103,7 +122,7 @@ export function FooterWithSitemap() {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150 hover:text-teal-400"
             >
               <svg
                 className="h-8 w-8"
@@ -117,7 +136,7 @@ export function FooterWithSitemap() {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150 hover:text-teal-400"
             >
               <svg
                 className="h-8 w-8"
@@ -135,7 +154,7 @@ export function FooterWithSitemap() {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150 hover:text-teal-400"
             >
               <svg
                 className="h-8 w-8"

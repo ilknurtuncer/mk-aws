@@ -21,6 +21,8 @@ import AboutUs from "../pages/AboutUs";
 import WordWithUs from "../pages/WordWithUs";
 import AboutUsFooter from "../pages/AboutUsFooter";
 import Insıght from "../pages/Insıght";
+import Cookies from "../components/footerextra/Cookies";
+import Privacy from "../components/footerextra/Privacy";
 
 
 const AppRouter = () => {
@@ -40,9 +42,9 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact onSubmit={handleSubmit} />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/about" element={<AboutUs/>}/>
-        <Route path="/Insıght" element={<Insıght/>}/>
-        <Route path="/wordwith" element={<WordWithUs/>} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/Insıght" element={<Insıght />} />
+        <Route path="/wordwith" element={<WordWithUs />} />
         <Route path="/fullstack" element={<FullStack />} />
         <Route path="/awsWellAr" element={<AwsWellAr />} />
         <Route path="/BuildAws" element={<BuildAws />} />
@@ -51,9 +53,11 @@ const AppRouter = () => {
         <Route path="/BachupDisaster" element={<BachupDisaster />} />
         <Route path="/ConstReview" element={<ConstReview />} />
         <Route path="/Performance" element={<Performance />} />
-        <Route path="/SecurityBusiness" element={<SecurityBusiness/>} />
+        <Route path="/SecurityBusiness" element={<SecurityBusiness />} />
         <Route path="/StorageSolutions" element={<StorageSolutions />} />
-        <Route path="/About-us" element={<AboutUsFooter/>} />
+        <Route path="/About-us" element={<AboutUsFooter />} />
+        <Route path="/cookies" element={<Cookies />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
 
       <FooterWithSitemap />
