@@ -15,6 +15,16 @@ const contactMethods = [
     },
   },
   {
+    icon: <FaMedium className=" text-4xl border rounded-full p-1 " />,
+
+    title: "Terraform vs. AWS CDK: A Story of Two Titans in Infrastructure as Code",
+    desc: "Once upon a time in the digital kingdom, two mighty tools emerged, destined to shape the realm of Infrastructure as Code (IaC): Terraform, the seasoned magician from the house of HashiCorp, and AWS CDK,...",
+    link: {
+      name: "learn more...",
+      href: "https://medium.com/@yemreaydeniz1/terraform-vs-aws-cdk-a-story-of-two-titans-in-infrastructure-as-code-673bea729316",
+    },
+  },
+  {
     icon: (
       <FaMedium className=" text-4xl border rounded-full p-1" />
     ),
