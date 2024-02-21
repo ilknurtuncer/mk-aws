@@ -25,9 +25,10 @@
     "react-persist": "^1.0.2",
     "react-redux": "^9.0.4",
     "react-router-dom": "^6.21.3",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-select": "^5.8.0",
-    "tailwind-merge": "^2.0.0"
+    "tailwind-merge": "^2.0.0",
+    "vercel": "^32.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

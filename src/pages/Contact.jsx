@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 const contactMethods = [
   {
@@ -68,10 +67,10 @@ const contactMethods = [
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: '',
+    name: "",
+    email: "",
+    company: "",
+    message: "",
   });
 
   // const submitForm = async (e) => {
@@ -82,30 +81,33 @@ const Contact = () => {
   // };
   const submitForm = async (e) => {
     e.preventDefault();
-  
+
     try {
-      const response = await fetch('https://sendmail-q7zv.onrender.com/sendmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://sendmail-q7zv.onrender.com/sendmail",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         const result = await response.json();
         console.log(result);
       } else {
-        console.error('Form data submission failed');
+        console.error("Form data submission failed");
       }
     } catch (error) {
-      console.error('Error:', error.message);
+      console.error("Error:", error.message);
     }
     setFormData({
-      name: '',
-      email: '',
-      company: '',
-      message: '',
+      name: "",
+      email: "",
+      company: "",
+      message: "",
     });
   };
 
@@ -120,38 +122,31 @@ const Contact = () => {
     <main className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
-          <div className="max-w-lg space-y-3 ">
-            <h3 className="text-teal-500 text-4xl font-semibold">
-            Let us know how we can help
+          <div className="max-w-lg space-y-3 text-xl font-semibold text-gray-600 mt-12">
+            <h3 className="text-teal-500 text-3xl font-semibold sm:text-4xl">
+              Let us know how we can help
             </h3>
-            
+            <p className=""></p>
             <p>
-              We’re here to help and answer any question you might have. We look forward to hearing from you! Please fill out the form, or use the contact information below.
+              We’re here to help and answer any question you might have. We look
+              forward to hearing from you! Please fill out the form, or use the
+              contact information below.
             </p>
             <div>
               <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
-                {
-                  contactMethods.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-x-3">
-                      <div className="flex-none text-gray-400">
-                        {item.icon}
-                      </div>
-                      <p>{item.contact}</p>
-                    </li>
-                  ))
-                }
+                {contactMethods.map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-x-3">
+                    <div className="flex-none text-gray-400">{item.icon}</div>
+                    <p>{item.contact}</p>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
           <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
-            <form
-              onSubmit={submitForm}
-              className="space-y-5"
-            >
+            <form onSubmit={submitForm} className="space-y-5">
               <div>
-                <label className="font-medium">
-                  Full name
-                </label>
+                <label className="font-medium text-lg">Full name</label>
                 <input
                   type="text"
                   name="name"
@@ -162,35 +157,29 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="font-medium">
-                  Email
-                </label>
+                <label className="font-medium text-lg">Email</label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-emerald-300 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-emerald-300  shadow-sm rounded-lg"
                 />
               </div>
               <div>
-                <label className="font-medium text-lg">
-                  Company
-                </label>
+                <label className="font-medium text-lg">Company</label>
                 <input
                   type="text"
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-emerald-300 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-emerald-300  shadow-sm rounded-lg"
                 />
               </div>
               <div>
-                <label className="font-medium">
-                  Message
-                </label>
+                <label className="font-medium text-lg">Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
@@ -201,7 +190,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full px-4 py-2 text-white font-medium text-lg bg-teal-500 hover:bg-teal-700 active:bg-teal-700 rounded-lg duration-150"
+                className="w-full px-4 py-2 text-white font-medium text-lg bg-teal-500  hover:bg-teal-600  active:bg-teal-500  rounded-lg duration-150"
               >
                 Submit
               </button>
@@ -211,8 +200,8 @@ const Contact = () => {
       </div>
     </main>
   );
-}
+};
 
-export default Contact;
+export default Contact;
 
 
