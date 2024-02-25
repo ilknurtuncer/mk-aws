@@ -2,10 +2,7 @@ import { FaMedium } from "react-icons/fa6";
 
 const contactMethods = [
   {
-    icon: (
-      <FaMedium className=" text-4xl border rounded-full p-1 " />
-    
-    ),
+    icon: <FaMedium className=" text-4xl border rounded-full p-1 " />,
     title:
       "Mastering AWS RDS Certificate Rotation: A DevOps Guide to Proactive Problem-Solving",
     desc: "In the complex landscape of AWS RDS, adaptability is essential. A recent incident involving a certificate update underscores the importance of agility and the human element in the field of DevOps...",
@@ -17,7 +14,8 @@ const contactMethods = [
   {
     icon: <FaMedium className=" text-4xl border rounded-full p-1 " />,
 
-    title: "Terraform vs. AWS CDK: A Story of Two Titans in Infrastructure as Code",
+    title:
+      "Terraform vs. AWS CDK: A Story of Two Titans in Infrastructure as Code",
     desc: "Once upon a time in the digital kingdom, two mighty tools emerged, destined to shape the realm of Infrastructure as Code (IaC): Terraform, the seasoned magician from the house of HashiCorp, and AWS CDK,...",
     link: {
       name: "learn more...",
@@ -25,9 +23,7 @@ const contactMethods = [
     },
   },
   {
-    icon: (
-      <FaMedium className=" text-4xl border rounded-full p-1" />
-    ),
+    icon: <FaMedium className=" text-4xl border rounded-full p-1" />,
 
     title: "React Folder Structure",
     desc: "The folder structure matters in many ways; it eases understanding, refactoring, and sustainability. In this article, I’ll show how we should manage our react app’s folder struct...",
@@ -69,34 +65,33 @@ const contactMethods = [
 ];
 const Insıght = () => {
   return (
-    <section className="py-14">
-      <div className=" max-w-screen-xl  px-4 text-gray-600  md:px-8 ">
-        <div className="max-w-md p-4 ml-10 ">
+    <section className="py-14 container max-w-7xl mx-auto">
+      <div className="  font-bold text-gray-500  px-4  md:px-8 ">
+        <div className="max-w-xl p-4 ml-10 ">
           <h3 className="text-teal-500 text-6xl font-semibold ">
             Let’s connect
           </h3>
-          <p className="mt-3">
+          <p className="mt-3 text-2xl">
             We’re here to help and answer any question you might have, We look
             forward to hearing from you .
           </p>
         </div>
-        <div>
-          <ul className=" inline-block mt-12 items-center   lg:mt-0">
+        <hr className="border-teal-300 border-[1.5px] dark:border-gray-700 mb-8"></hr>
+        <div className="container max-w-7xl mx-auto">
+          <ul className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8  lg:mt-0">
             {contactMethods.map((item, idx) => (
               <li
                 key={idx}
                 className=" border-t py-6 md:max-w-sm md:py-0 md:border-t-0 lg:border-l lg:px-12 lg:max-w-none"
               >
-                <div className=" p-2 justify-center text-gray-700">
-                  {item.icon}
-                </div>
-                <h4 className=" p-3 text-teal-400 text-4xl font-medium xl:text-4xl">
+                <div className=" p-2 text-gray-700">{item.icon}</div>
+                <h4 className=" p-3 text-gray-600 opacity-[0.9] text-3xl font-medium xl:text-3xl">
                   {item.title}
                 </h4>
                 <p>{item.desc}</p>
                 <a
                   href={item.link.href}
-                  className=" items-center text-sm text-red-500 duration-150 hover:text-indigo-400 font-medium"
+                  className=" items-center text-md text-teal-400 duration-150 hover:text-red-500 font-medium"
                 >
                   {item.link.name}
                   <svg

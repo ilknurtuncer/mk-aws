@@ -18,12 +18,11 @@ import Performance from "../services/Performance";
 import StorageSolutions from "../services/StorageSolutions";
 import SecurityBusiness from "../services/SecurityBusiness";
 import AboutUs from "../pages/AboutUs";
-import WordWithUs from "../pages/WordWithUs";
+import WorkWithUs from "../pages/WorkWithUs";
 import AboutUsFooter from "../pages/AboutUsFooter";
 import Insıght from "../pages/Insıght";
 import Cookies from "../components/footerextra/Cookies";
 import Privacy from "../components/footerextra/Privacy";
-
 
 const AppRouter = () => {
   // eslint-disable-next-line no-undef
@@ -44,7 +43,7 @@ const AppRouter = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/Insıght" element={<Insıght />} />
-        <Route path="/wordwith" element={<WordWithUs />} />
+        <Route path="/WorkWithUs" element={<WorkWithUs />} />
         <Route path="/fullstack" element={<FullStack />} />
         <Route path="/awsWellAr" element={<AwsWellAr />} />
         <Route path="/BuildAws" element={<BuildAws />} />

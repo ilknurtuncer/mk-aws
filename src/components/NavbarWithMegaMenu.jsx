@@ -3,7 +3,6 @@ import {
   Navbar,
   Collapse,
   Typography,
-  Button,
   IconButton,
   List,
   ListItem,
@@ -29,14 +28,14 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { Link, useNavigate } from "react-router-dom";
-import LogoImage from "../assets/carousel/cloudifiers-logo-mavi-saydam-01.png";
+import LogoImage from "../assets/carousel/cloudifiers-logo-mavi-saydam-02.png";
 
 const navListMenuItems = [
   {
-    title: "Security Business",
+    title: "Security",
     description: "",
     icon: SquaresPlusIcon,
-    link: "/SecurityBusiness",
+    link: "/Security",
   },
   {
     title: "Build AWS",
@@ -96,7 +95,7 @@ function NavListMenu() {
       // eslint-disable-next-line no-undef
       <Link to={link} className="font-medium " key={key}>
         <MenuItem className=" flex items-center gap-3 ">
-          <div className="flex items-center justify-center  !bg-teal-500 p-2 rounded">
+          <div className="flex items-center justify-center  !bg-teal-500 p-2 rounded ">
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
@@ -190,11 +189,13 @@ function NavList() {
         color="teal"
         className="font-semibold text-lg hover:text-white"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-6">ABOUT</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-6">
+          ABOUT US
+        </ListItem>
       </Typography>
       <Typography
         as={Link}
-        to="/wordwith"
+        to="/WorkWithUs"
         variant="small"
         color="teal"
         className="font-semibold text-lg hover:text-white"
@@ -226,7 +227,7 @@ function NavList() {
           className="flex items-center gap-2 py-2 pr-6"
           onClick={() => navigate("/Insıght")}
         >
-         INSIGHT 
+          INSIGHT
         </ListItem>
       </Typography>
     </List>
@@ -244,13 +245,13 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className=" bg-black mx-auto max-w-full border-hidden rounded-none">
+    <Navbar className=" bg-black mx-auto max-w-full border-hidden rounded-none ">
       <div className="flex items-center justify-around text-red-200">
         <img
           src={LogoImage}
           alt="MK-AWS Logo"
-          className="mr-4 cursor-pointer lg:ml-2"
-          style={{ maxWidth: "150px" }} // İsteğe bağlı olarak genişliği ayarlayabilirsiniz
+          className="mr-4  cursor-pointer lg:ml-2"
+          style={{ maxWidth: "80px" }} // İsteğe bağlı olarak genişliği ayarlayabilirsiniz
         />
         {/* <Typography
           as="a"
@@ -287,14 +288,14 @@ export function NavbarWithMegaMenu() {
       </div>
       <Collapse open={openNav}>
         <NavList />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden ">
+        {/* <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden ">
           <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
             Log In
           </Button>
           <Button variant="gradient" size="sm" fullWidth>
             Sign In
           </Button>
-        </div>
+        </div> */}
       </Collapse>
     </Navbar>
   );
