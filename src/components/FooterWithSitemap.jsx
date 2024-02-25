@@ -5,82 +5,99 @@ import { Link } from "react-router-dom";
 const SITEMAP = [
   {
     title: "Company",
-    links: ["Contact","About Us", "Cookies", "Privacy"],
+    links: ["Contact", "About Us", "Cookies", "Privacy"],
   },
- 
-  {
-    title: " Cloudifiers ",
-   
-    links: [""],
-  },
-]
 
+  
+  
+];
 
-const currentYear = new Date().getFullYear();
+// const currentYear = new Date().getFullYear();
 
 export function FooterWithSitemap() {
   return (
-    <footer className="relative w-full bg-black">
+    <footer className="relative  w-full bg-black">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="mx-auto grid w-full grid-cols-1 gap-8 py-8 md:grid-cols-2 lg:grid-cols-4">
-        {SITEMAP.map(({ title, links }, key) => (
-  <div key={key} className="w-full">
-    {title !== " Cloudifiers " ? (
-      <Typography
-        variant="small"
-        color="white"
-        className="mb-3 font-bold  text-teal-400"
-      >
-        {title}
-      </Typography>
-    ) : (
-      <div className=" items-center ">
-        <Typography
-          variant="small"
-          color="white"
-          className="font-bold mr-2  text-teal-400"
-        >
-          {title}
-        </Typography>
-       
-        <svg className=" mt-6 w-5 h-5 text-teal-300 dark:text-white opacity-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-    <path fill-rule="evenodd" d="M12 2a8 8 0 0 1 6.6 12.6l-.1.1-.6.7-5.1 6.2a1 1 0 0 1-1.6 0L6 15.3l-.3-.4-.2-.2v-.2A8 8 0 0 1 11.8 2Zm3 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" clip-rule="evenodd"/>
-  </svg>
-  <p className="text-white mt-1">
-  244 Chase Road, London, United Kingdom, N14 6HH
-  </p>
-  
-      </div>
-    )}
-    <ul className="space-y-1">
-      {links.map((link, key) => (
-        <Typography
-          key={key}
-          as="li"
-          color="white"
-          className="font-normal"
-        >
-          <Link
-            to={link === "About Us" ? "/about-us" : `/${link.toLowerCase().replace(/\s+/g, "-")}`}
-            className="inline-block py-1 pr-2 transition-transform hover:scale-125 hover:text-red-300"
-          >
-            {link}
-          </Link>
-        </Typography>
-      ))}
-    </ul>
-  </div>
-))}
+          {SITEMAP.map(({ title, links }, key) => (
+            <div key={key} className="w-full">
+              {title !== " Cloudifiers " ? (
+                <Typography
+                  variant="small"
+                  color="white"
+                  className="mb-3 font-bold  text-teal-400"
+                >
+                  {title}
+                </Typography>
+              ) : (
+                <div className=" items-center ">
+                  <Typography
+                    variant="small"
+                    color="white"
+                    className="font-bold mr-2  text-teal-400"
+                  >
+                    {title}
+                  </Typography>
+                </div>
+              )}
 
+              <ul className="space-y-1">
+                {links.map((link, key) => (
+                  <Typography
+                    key={key}
+                    as="li"
+                    color="white"
+                    className="font-normal"
+                  >
+                    <Link
+                      to={
+                        link === "About Us"
+                          ? "/about-us"
+                          : `/${link.toLowerCase().replace(/\s+/g, "-")}`
+                      }
+                      className="inline-block py-1 pr-2 transition-transform hover:scale-125 hover:text-red-300"
+                    >
+                      {link}
+                    </Link>
+                  </Typography>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        {/* konum-adres */}
+        <div className="flex items-center justify-center text-center gap-4 mb-4 ">
+          <svg
+            className="text-center mt-auto w-5 h-5  text-teal-300 dark:text-white opacity-50"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2a8 8 0 0 1 6.6 12.6l-.1.1-.6.7-5.1 6.2a1 1 0 0 1-1.6 0L6 15.3l-.3-.4-.2-.2v-.2A8 8 0 0 1 11.8 2Zm3 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <p className="text-white mt-1">
+            244 Chase Road, London, United Kingdom, N14 6HH
+          </p>
+        </div>
+
+        <div>
+          <p className="mx-auto flex items-center justify-center text-center text-white max-w-md text-sm opacity-[0.4]">
+            Cloudifiers™ is a trademark of MK CONSULTANCY(UK) LTD. Company
+            registered in England and Wales number 10180820.
+          </p>
         </div>
         <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"
             className="mb-4 text-center font-normal text-white md:mb-0"
           >
-            &copy; {currentYear}{" "}
-            <a href="https://material-tailwind.com/">Couldifiers</a>. All Rights
-            Reserved.
+            &copy; {} <a href="https://material-tailwind.com/">Couldifiers</a>.
+            All Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-white sm:justify-center">
             <Typography

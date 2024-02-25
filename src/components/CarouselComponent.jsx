@@ -8,8 +8,11 @@ import "../index.css";
 
 function Component() {
   return (
-    <div className="relative h-screen">
-      <Carousel pauseOnHover className="carousel-slide border-0 rounded-none">
+    <div className="relative h-screen max-h-[625px] sm:max-h-[820px]">
+      <Carousel
+        pauseOnHover
+        className="carousel-slide border-0 rounded-none "
+      >
         {/* Carousel Slide 1 */}
         <div className="relative h-full">
           <img
@@ -17,7 +20,7 @@ function Component() {
             alt="..."
             className="w-full h-full object-cover"
           />
-          <div className="absolute  flex flex-col justify-center items-center text-center bottom-0 right-40 left-40 p-20 sm:px-4 ">
+          <div className="absolute  flex flex-col justify-center items-center text-center top-40 right-40 left-40 p-20 sm:px-4 ">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-teal-400">
               Empowering Your Cloud Journey
             </h1>
