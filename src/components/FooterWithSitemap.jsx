@@ -91,7 +91,7 @@ export function FooterWithSitemap() {
         <div>
           <p className="mx-auto flex items-center justify-center text-center text-white text-xs opacity-[0.5] mb-2 mt-4">
             Cloudifiers™ is a trademark of MK CONSULTANCY(UK) LTD. Company
-            registered in England and Wales number 10180820.
+            registered in England and Wales, Company Number 10180820.
           </p>
         </div>
         <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
@@ -108,7 +108,23 @@ export function FooterWithSitemap() {
               href="https://www.linkedin.com/company/102165880/admin/feed/posts/"
               className="opacity-80 transition-opacity hover:opacity-100 hover:scale-150 hover:text-teal-400"
             >
-             <svg className="w-6 h-6 duration-150 hover:text-teal-500 mt-1" fill="none" viewBox="0 0 48 48"><g clip-path="url(#clip0_17_68)"><path fill="currentColor" d="M44.447 0H3.544C1.584 0 0 1.547 0 3.46V44.53C0 46.444 1.584 48 3.544 48h40.903C46.407 48 48 46.444 48 44.54V3.46C48 1.546 46.406 0 44.447 0zM14.24 40.903H7.116V17.991h7.125v22.912zM10.678 14.87a4.127 4.127 0 01-4.134-4.125 4.127 4.127 0 014.134-4.125 4.125 4.125 0 010 8.25zm30.225 26.034h-7.115V29.766c0-2.653-.047-6.075-3.704-6.075-3.703 0-4.265 2.896-4.265 5.887v11.325h-7.107V17.991h6.826v3.13h.093c.947-1.8 3.272-3.702 6.731-3.702 7.21 0 8.541 4.744 8.541 10.912v12.572z" /></g><defs><clipPath id="clip0_17_68"><path fill="currentColor" d="M0 0h48v48H0z" /></clipPath></defs></svg>
+              <svg
+                className="w-6 h-6 duration-150 hover:text-teal-500 mt-1"
+                fill="none"
+                viewBox="0 0 48 48"
+              >
+                <g clip-path="url(#clip0_17_68)">
+                  <path
+                    fill="currentColor"
+                    d="M44.447 0H3.544C1.584 0 0 1.547 0 3.46V44.53C0 46.444 1.584 48 3.544 48h40.903C46.407 48 48 46.444 48 44.54V3.46C48 1.546 46.406 0 44.447 0zM14.24 40.903H7.116V17.991h7.125v22.912zM10.678 14.87a4.127 4.127 0 01-4.134-4.125 4.127 4.127 0 014.134-4.125 4.125 4.125 0 010 8.25zm30.225 26.034h-7.115V29.766c0-2.653-.047-6.075-3.704-6.075-3.703 0-4.265 2.896-4.265 5.887v11.325h-7.107V17.991h6.826v3.13h.093c.947-1.8 3.272-3.702 6.731-3.702 7.21 0 8.541 4.744 8.541 10.912v12.572z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_17_68">
+                    <path fill="currentColor" d="M0 0h48v48H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </Typography>
             <Typography
               as="a"
@@ -140,9 +156,9 @@ export function FooterWithSitemap() {
                 aria-hidden="true"
               >
                 <path
-                fill-rule="twiter"
-                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" 
-                clip-rule="twiter"
+                  fill-rule="twiter"
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  clip-rule="twiter"
                 />
               </svg>
             </Typography>

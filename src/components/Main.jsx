@@ -41,7 +41,7 @@ const Main = () => {
       <main className="container max-w-7xl text-2xl font-semibold text-gray-700 mx-auto px-2 py-2 opacity-[0.9]">
         {/* section1 */}
         <section className="text-lg font-bold text-gray-600 bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8 rounded-lg mt-6 mb-8">
-          <div className="p-6 rounded-lg">
+          <div className="p-6 rounded-lg ">
             <div className="flex justify-center items-center" />
 
             <img src={Bulut} className="max-w-full h-auto mb-6" />
@@ -55,7 +55,7 @@ const Main = () => {
               are in your cloud journey.
             </p>
           </div>
-          <div className="p-6 rounded-lg">
+          <div className="p-6 rounded-lg ">
             <h3 className="text-xl text-teal-500 font-bold  mb-4">
               COST-EFFICIENCY EXPERTISE
             </h3>
@@ -77,7 +77,7 @@ const Main = () => {
               fast, reliable, and uninterrupted service delivery.
             </p>
           </div>
-          <div className="p-6 rounded-lg">
+          <div className="p-6 rounded-lg ">
             <h3 className="text-xl text-teal-500 font-bold  mb-4">
               COMPREHENSIVE SUPPORT
             </h3>
@@ -94,7 +94,7 @@ const Main = () => {
       {/* main3 */}
       <main className="container max-w-7xl bg-stone-200 rounded-lg  text-gray-700 font-semibold mx-auto px-4 py-2 mb-8 opacity-[0.9]">
         <div className="text-center mb-8">
-          <h2 className="text-4xl  font-bold text-zinc-600 mb-4 mt-6">
+          <h2 className="text-3xl sm:text-5xl  font-bold text-zinc-600 mb-4 mt-6">
             DISCOVER HOW WE CAN HELP YOU
           </h2>
         </div>
@@ -102,7 +102,7 @@ const Main = () => {
           <div className="p-6 rounded-lg">
             <div className="flex justify-center items-center" />
             <svg
-              className="h-40 w-40  text-zinc-600"
+              className="h-32 w-32  text-zinc-600"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -132,7 +132,7 @@ const Main = () => {
           </div>
           <div className="p-6 rounded-lg">
             <svg
-              className="h-40 w-40 text-zinc-600"
+              className="h-32 w-32 text-zinc-600"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -156,7 +156,7 @@ const Main = () => {
             </p>
             <a
               href="#"
-              className="inline-block mt-11  bg-zinc-600 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded"
+              className="inline-block mt-16  bg-zinc-600 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded"
             >
               Learn More
             </a>
@@ -164,7 +164,7 @@ const Main = () => {
 
           <div className="p-6 rounded-lg">
             <svg
-              className="h-40 w-40 text-zinc-600"
+              className="h-32 w-32 text-zinc-600"
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"

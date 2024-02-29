@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 
 import Optimization from "../assets/images/Bulut8.jpg";
@@ -6,18 +7,18 @@ const Performance = () => {
   return (
     <>
       {/* main1 */}
-      <main className="  flex justify-center items-center text-center mt-10 py-2 ">
+      <main className="container max-w-7xl mx-auto mt-12 py-2 ">
         {/* img and title */}
-        <div className=" container rounded border-l-8 border-teal-700 bg-[#a4d6d6] flex justify-center items-center">
+        <div className=" rounded border-l-8 border-teal-700 bg-[#a4d6d6] flex justify-center items-center flex-col sm:flex-row">
           <div>
             <img src={Optimization} className="opacity-[0.8]  max-h-80" />
           </div>
-          
+
           <div className=" text-left m-10">
-            <h2 className=" text-5xl font-bold font-sans text-zinc-700 mb-4  ">
+            <h2 className=" text-4xl sm:text-5xl font-bold font-sans text-zinc-700 mb-4  ">
               PERFORMANCE OPTIMISATION
             </h2>
-            <p className="text-6xl text-teal-800  font-sans font-bold ">
+            <p className="text-4xl sm:text-5xl text-teal-800  font-sans font-bold opacity-[]">
               Boost Your System's Capability
             </p>
           </div>
@@ -25,15 +26,15 @@ const Performance = () => {
         {/* <div className="bg-orange-500 h-1"></div> */}
       </main>
       {/* main2 */}
-      <main className="bg-white ">
-        <main className="container font-bold bg-white text-gray-700 mx-auto px-2 py-2 ">
+      <main className="bg-white  ">
+        <main className="container max-w-7xl  bg-white  mx-auto px-2 py-2 ">
           {/* section1 */}
-          <section className="text-2xl font-semibold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-            <div className="p-6 rounded-lg">
+          <section className=" text-lg font-bold text-gray-600 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-4">
+            <div className="p-4 rounded-lg">
               <div className="flex justify-center items-center" />
 
               {/* <img src={Push} className="max-w-full h-auto" /> */}
-              <h3 className="text-4xl font-bold  text-teal-500 mb-4">
+              <h3 className="text-2xl font-bold  text-teal-500 mb-4">
                 ENSURE PEAK PERFORMANCE
               </h3>
               <p>
@@ -43,19 +44,19 @@ const Performance = () => {
                 for future challenges.
               </p>
             </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+            <div className="p-4 rounded-lg">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 PERFORMANCE OBJECTIVES
               </h3>
               <p>
                 Aim high, satisfy more. We aid in setting and achieving key
-                performance goals—be it reducing delays, increasing
-                availability, or enhancing data flow—ensuring your
+                performance goals-be it reducing delays, increasing
+                availability, or enhancing data flow-ensuring your
                 infrastructure's peak operation aligns with client expectations.
               </p>
             </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+            <div className="p-4 rounded-lg">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 TECHNICAL ARCHITECTURE
               </h3>
               <p>
@@ -64,8 +65,8 @@ const Performance = () => {
                 system poised for expansion.
               </p>
             </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+            <div className="p-4 rounded-lg">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 PERFORMANCE ANALYSIS
               </h3>
               <p>
@@ -74,8 +75,8 @@ const Performance = () => {
                 optimal user experience.
               </p>
             </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+            <div className="p-4 rounded-lg">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 STRATEGIC GROWTH PLANNING
               </h3>
               <p>
@@ -84,8 +85,8 @@ const Performance = () => {
                 prepare your platform for scaling up without performance loss.
               </p>
             </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+            <div className="p-4 rounded-lg">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 CONTINUOUS REVIEW
               </h3>
               <p>
@@ -100,27 +101,27 @@ const Performance = () => {
 
       {/* main3 */}
       <main className="mt-14 mb-14 opacity-[0.9]">
-        <main className="container bg-gray-100  text-gray-700 font-semibold mx-auto px-4 py-2 mb-2 rounded-lg border">
+        <main className="container max-w-7xl mx-auto bg-gray-100 text-xl text-gray-700 font-bold px-4 py-2 mb-2 rounded-lg border">
           {/* <div className=" h-2"></div>
           <hr className="border-[#36b6abee] border-[1.5px] dark:border-gray-700 "></hr> */}
           <div className="text-center ">
-            <h2 className="text-6xl font-bold text-zinc-700  mb-8 mt-8">
+            <h2 className="text-5xl font-bold text-zinc-700  mb-8 mt-8">
               FEATURED SERVICES
             </h2>
-            <p className="font-bold font-sans text-5xl  text-teal-800 mt-4 mb-4">
+            <p className="font-bold font-sans text-4xl  text-teal-800 mt-4 mb-4 opacity-[0.9]">
               Your Pathway to Enhanced Efficiency and Scalability
             </p>
-            <p className="font-semibold font-serif text-3xl text-zinc-700 mt-4 mb-8 ">
-              Discover how The Scale Factory can help you optimize the
-              performance <br /> of your infrastructure and future-proof your
-              platform for years to come.
+            <p className="font-bold font-sans text-2xl text-zinc-700 mt-4 mb-8 ">
+              Discover how Cloudifiers can help you optimize the performance{" "}
+              <br /> of your infrastructure and future-proof your platform for
+              years to come.
             </p>
           </div>
-          <section className=" text-2xl font-semibold grid text-zinc-800 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <section className=" text-lg font-bold grid text-zinc-700 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="p-6 ">
               <div className="flex justify-center items-center" />
               <svg
-                className="h-40 w-40  text-zinc-700"
+                className="h-32 w-40 text-zinc-600"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -133,7 +134,7 @@ const Performance = () => {
                 />
               </svg>
               <br />
-              <h3 className="text-3xl font-bold text-zinc-700  mb-4">
+              <h3 className="text-2xl font-bold text-zinc-700  mb-4">
                 PERFORMANCE OPTIMISATION SERVICES
               </h3>
               <p>
@@ -143,14 +144,14 @@ const Performance = () => {
               </p>
               <a
                 href="#"
-                className="inline-block mt-12 bg-zinc-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                className="inline-block mt-8 bg-zinc-700 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded"
               >
                 Learn More
               </a>
             </div>
             <div className="p-6 rounded-lg">
               <svg
-                className="h-40 w-40 text-zinc-700"
+                className="h-32 w-40 text-zinc-600"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -164,7 +165,7 @@ const Performance = () => {
                 <polyline points="2 12 12 17 22 12" />
               </svg>
               <br />
-              <h3 className="text-3xl font-bold text-zinc-700  mb-4">
+              <h3 className="text-2xl font-bold text-zinc-700  mb-4">
                 AWS WELL-ARCHITECTED REVIEW
               </h3>
               <p>
@@ -174,7 +175,7 @@ const Performance = () => {
               </p>
               <a
                 href="#"
-                className="inline-block mt-4  bg-zinc-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                className="inline-block mt-8  bg-zinc-700 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded"
               >
                 Learn More
               </a>
@@ -182,7 +183,7 @@ const Performance = () => {
 
             <div className="p-6 rounded-lg">
               <svg
-                className="h-40 w-40 text-zinc-700"
+                className="h-32 w-40 text-zinc-600"
                 viewBox="0 0 24 24"
                 strokeWidth={2}
                 stroke="currentColor"
@@ -196,7 +197,7 @@ const Performance = () => {
                 <path d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h2" />
               </svg>
               <br />
-              <h3 className="text-3xl font-bold text-zinc-700  mb-4">
+              <h3 className="text-2xl font-bold text-zinc-700  mb-4">
                 PROACTIVE SUPPORT
               </h3>
               <p>
@@ -206,7 +207,7 @@ const Performance = () => {
               </p>
               <a
                 href="#"
-                className="inline-block mt-12 bg-zinc-700  hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                className="inline-block mt-16 bg-zinc-700  hover:bg-teal-600 text-white font-bold py-2 px-4 rounded"
               >
                 Learn More
               </a>
