@@ -35,7 +35,7 @@ const contactMethods = [
   {
     icon: <FaMedium className=" text-4xl border rounded-full p-1 " />,
 
-    title: "ReactJS — Redux",
+    title: "ReactJS - Redux",
     desc: "Many developers getting started with React have at least heard of Redux or are already developing with Redux...",
     link: {
       name: "learn more...",
@@ -56,7 +56,7 @@ const contactMethods = [
     icon: <FaMedium className=" text-4xl border rounded-full p-1 " />,
 
     title: "Top JavaScript Concepts to Know Before Learning React",
-    desc: "If you want to learn React — or any JavaScript framework — you’ll first need to understand the fundamental JavaScript methods and concepts...",
+    desc: "If you want to learn React - or any JavaScript framework - you’ll first need to understand the fundamental JavaScript methods and concepts...",
     link: {
       name: "learn more...",
       href: "https://medium.com/@ilknurtuncer67/top-javascript-concepts-to-know-before-learning-react-d1bf0a0fc254",
@@ -73,7 +73,7 @@ const Insıght = () => {
           </h3>
           <p className="mt-3 text-2xl">
             We’re here to help and answer any question you might have, We look
-            forward to hearing from you .
+            forward to hearing from you.
           </p>
         </div>
         <hr className="border-teal-300 border-[1.5px] dark:border-gray-700 mb-8"></hr>

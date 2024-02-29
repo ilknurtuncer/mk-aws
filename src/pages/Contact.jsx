@@ -84,7 +84,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        "https://sendmail-q7zv.onrender.com/sendmail",
+        "https://nodeijs-mailler01-3hsx.vercel.app/sendmail",
         {
           method: "POST",
           headers: {

@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/img-redundant-alt */
 
 
 // import developer from "../assets/pictures/developer.jpg";
@@ -9,44 +10,44 @@ const FullStack = () => {
   return (
     <>
       {/* main1 */}
-      <main className="container  mx-auto px-2 py-2 bg-white">
-        <div className="text-center px- py-2  mb-2 mt-2">
+      <main className="container max-w-7xl mx-auto px-2 py-2 bg-white">
+        <div className="text-center  py-2  mb-2 mt-2">
           {/* img and title */}
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center flex-col sm:flex-row">
             <div>
-              <img src={developer} className=" opacity-[] mr-4 max-h-[400px]" />
+              <img src={developer} className=" opacity-[] mr-4 max-h-[360px]" />
             </div>
             <div>
-              <h2 className=" text-teal-500 text-7xl font-bold font-sans">
-                WEBSITE DESIGN
+              <h2 className=" text-teal-500 text-4xl sm:text-5xl font-bold font-sans opacity-[0.9]">
+                FULLSTACK-WEB DEVELOPMENT
               </h2>
-              <p className=" ml-4 text-yellow-400 text-5xl font-serif font-bold mt-4">
-                Creating User-Friendly Digital Interfaces That Drive Engagement.
+              <p className=" ml-4 text-yellow-400 text-3xl sm:text-5xl font-sans font-bold mt-4 max-w-4xl">
+                Creating User-Friendly Digital Interfaces That Drive Engagement
               </p>
             </div>
           </div>
-          <hr className="border-teal-500 border-[1.5px] dark:border-gray-700 "></hr>
+          <hr className="border-teal-500 border-[1.5px] dark:border-gray-700 mt-4 "></hr>
         </div>
       </main>
 
       {/* main2 */}
-      <main className="bg-white">
-        <main className="container font-bold bg-white text-gray-700 mx-auto px-2 py-2">
+      <main className="bg-white container max-w-7xl mx-auto ">
+        <main className=" text-lg font-bold bg-white text-gray-600 mx-auto px-2 py-2">
           {/* section1 */}
-          <section className="text-xl font-semibold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-            <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl  ">
+          <section className=" font-bold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div className="p-[66px] rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl  ">
               <div className="flex justify-center items-center" />
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 ENGAGING DESIGNS
               </h3>
               <p>
                 Crafting first impressions online. We design intuitive, engaging
                 websites that embody your brand and smooth the path to customer
-                conversion.
+                conversion
               </p>
             </div>
-            <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+            <div className="p-[66px] rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 UNIVERSAL ACCESS
               </h3>
               <p>
@@ -55,8 +56,8 @@ const FullStack = () => {
                 is accessed.
               </p>
             </div>
-            <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+            <div className="p-[66px] rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 SEO & SPEED
               </h3>
               <p>
@@ -66,7 +67,7 @@ const FullStack = () => {
               </p>
             </div>
             <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 USER EXPERIENCE FOCUSED
               </h3>
               <p>
@@ -76,7 +77,7 @@ const FullStack = () => {
               </p>
             </div>
             <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 E-COMMERCE & LEADS
               </h3>
               <p>
@@ -85,7 +86,7 @@ const FullStack = () => {
               </p>
             </div>
             <div className="p-16 rounded-[50%] text-center border-x-4 border-y-2 border-teal-500 shadow-gray-600 shadow-xl">
-              <h3 className="text-4xl font-bold text-teal-500 mb-4">
+              <h3 className="text-2xl font-bold text-teal-500 mb-4">
                 CONTINUOUS EVOLUTION
               </h3>
               <p>
@@ -99,7 +100,7 @@ const FullStack = () => {
       </main>
 
       {/* main3 */}
-      <main className="container mx-auto bg-[#fbf4eb] rounded-lg">
+      <main className="container mx-auto max-w-7xl bg-[#fbf4eb] rounded-lg">
         <div className="text-center opacity-[0.9] border-l-8 border-orange-600 rounded-lg bg-[#f7992d] py-3  mb-2 mt-8"></div>
 
         {/* div1 */}
@@ -112,19 +113,19 @@ const FullStack = () => {
               alt="Time Image"
             />
             <div>
-              <h2 className="text-6xl font-bold font-sans text-teal-500 mb-4 mt-8">
+              <h2 className="text-4xl sm:text-5xl font-bold font-sans text-teal-500 mb-4 mt-8">
                 FEATURED SERVICES
               </h2>
-              <p className=" text-gray-500 text-4xl max-w-4xl font-sans font-bold ">
-                Your Digital Transformation Partner.
+              <p className=" text-zinc-600 text-3xl sm:text-5xl max-w-4xl font-sans font-bold ">
+                Your Digital Transformation Partner
               </p>
             </div>
           </div>
         </div>
 
-        <section className="font-semibold text-2xl text-gray-600 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mb-4 p-4">
-          <div className="p-6 rounded-lg mb-8">
-            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+        <section className="font-bold text-xl  text-gray-600 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 mb-8 p-6">
+          <div className="p-4 rounded-lg mb-8">
+            <h3 className="text-2xl font-bold text-teal-500 mb-4">
               WEB DESIGN EXCELLENCE
             </h3>
             <p>
@@ -132,8 +133,8 @@ const FullStack = () => {
               is a strategic, visually appealing gateway to customer conversion.
             </p>
           </div>
-          <div className="p-6 rounded-lg">
-            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+          <div className="p-4 rounded-lg">
+            <h3 className="text-2xl font-bold text-teal-500 mb-4">
               USER EXPERIENCE ENHANCEMENT
             </h3>
             <p>
@@ -141,8 +142,8 @@ const FullStack = () => {
               interaction, ensuring visitors stay longer and return frequently.
             </p>
           </div>
-          <div className="p-6 rounded-lg">
-            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+          <div className="p-4 rounded-lg">
+            <h3 className="text-2xl font-bold text-teal-500 mb-4">
               RESPONSIVE DESIGN INTEGRATION
             </h3>
             <p>
@@ -150,8 +151,8 @@ const FullStack = () => {
               optimal viewing experience across all platforms.
             </p>
           </div>
-          <div className="p-6 rounded-lg">
-            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+          <div className="p-4 rounded-lg">
+            <h3 className="text-2xl font-bold text-teal-500 mb-4">
               VISIBILITY BOOST
             </h3>
             <p>
@@ -159,8 +160,8 @@ const FullStack = () => {
               increase traffic and elevate search rankings.
             </p>
           </div>
-          <div className="p-6 rounded-lg">
-            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+          <div className="p-4 rounded-lg">
+            <h3 className="text-2xl font-bold text-teal-500 mb-4">
               PERFORMANCE TUNING
             </h3>
             <p>
@@ -168,8 +169,8 @@ const FullStack = () => {
               performance for faster loading and smooth browsing.
             </p>
           </div>
-          <div className="p-6 rounded-lg">
-            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+          <div className="p-4 rounded-lg">
+            <h3 className="text-2xl font-bold text-teal-500 mb-4">
               CONVERSION OPTIMIZATION
             </h3>
             <p>

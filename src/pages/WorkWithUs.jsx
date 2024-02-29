@@ -10,7 +10,7 @@ const WorkWithUs = () => {
               WORK WITH US
             </h2>
             <p className="mt-2 text-2xl font-bold text-gray-500">
-              Collaborate as a Trusted Partner in Cloud Innovation.
+              Collaborate as a Trusted Partner in Cloud Innovation
             </p>
             <hr className="border-teal-400 border-[1.5px] dark:border-gray-700 "></hr>
             <div className="mt-8">
